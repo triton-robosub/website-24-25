@@ -1,0 +1,32 @@
+{
+  "name": "website-24-25",
+  "version": "1.0.0",
+  "description": "triton robosub website for 2024-2025",
+  "main": "navbar.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "website-24-25"
+  },
+  "keywords": [
+    "triton",
+    "robosub",
+    "ucsd",
+    "robotics",
+    "auv"
+  ],
+  "author": "phylicia wang, lucas yan",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.18.0"
+  }
+}

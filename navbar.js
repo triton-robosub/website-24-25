@@ -1,37 +1,11 @@
-<!doctype html>
-<html lang="en-US">
+import React from 'react';
 
-<head>
-	<!--
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
--->
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-
-    <link rel="stylesheet" href="../css/navbar.css">
-    
-    <!-- Basics -->
-    <meta http-equiv = "Content-Type" content="text/html; charset=utf-8">    
-    <title>Triton Robosub</title>
-    <meta http-equiv = "Content-Style-Type" content="text/css">
-
-    <!-- Force IE/MS Edge out of compatibility mode -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Site Info -->
-    <meta name = "author" content = "Phylicia Wang">
-    <meta name= "description" content="Official website for UCSD robotics team Triton Robosub." />
-    <meta name = "keywords" content = "Robosub, Triton, UCSD, Robotics">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
-
-<body>
-	<!-- Main Container -->
-		<!-- Navigation -->
-			<nav>
+function Navbar() {
+    return (
+        <nav>
 				<ul>
 					<li><a href="../index.html">
-                        <img src="../images/logotransparent.png" alt="Triton Robosub Logo">
+                        <img src="../images/logotransparent.png" alt="Triton Robosub Logo"/>
                     </a></li>
                     <li class = "dropdown">
                         <a href="../about">about</a>
@@ -56,9 +30,7 @@
 					<li><a href="../contactus.html">contact us</a></li>
 				</ul>
             </nav>
-        </div>
-    </div>
+    );
+}
 
- 
-</body>
-</html>
+export default Navbar;
