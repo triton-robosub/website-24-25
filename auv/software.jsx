@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './Navbar';
-import './styles.css';
+import Navbar from './components/Navbar';
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -10,6 +10,7 @@ function App() {
                 <h1>Welcome to My Website</h1>
                 <p>This is a paragraph.</p>
             </div>
+            <Footer/>
         </div>
     );
 }
