@@ -1,17 +1,18 @@
-import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./styles.css";
 
-function App() {
+function Blog() {
     return (
         <div>
             <Navbar />
             <div className="container">
-                <h1>Welcome to My Website</h1>
+                <h1>Welcome to My Blog</h1>
                 <p>This is a paragraph.</p>
             </div>
+            <Footer />
         </div>
     );
 }
 
-export default App;
+export default Blog;

@@ -1,5 +1,5 @@
-import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./styles.css";
 
 function Contact() {
@@ -10,6 +10,7 @@ function Contact() {
                 <h1>Welcome to My Contact</h1>
                 <p>This is a paragraph.</p>
             </div>
+            <Footer />
         </div>
     );
 }
