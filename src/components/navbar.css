@@ -29,18 +29,21 @@ nav ul li img {
 
 nav ul li a:hover {
     background-color: #ddd;
-    color: #007BFF;
+    color: #007bff;
 }
 
 /* Dropdown Content */
 .dropdown-content {
-    display: none; /* Hidden by default */
+    display: block;
     position: absolute; /* Positioned relative to parent */
     background-color: #fff;
     min-width: 160px; /* Minimum width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
     z-index: 1; /* Ensure it appears above other elements */
     padding: 10px 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .dropdown-content li {
@@ -58,7 +61,10 @@ nav ul li a:hover {
 
 /* Show Dropdown on Hover */
 .dropdown:hover .dropdown-content {
-    display: block; /* Show dropdown on hover */
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3 ease;
 }
 
 /* Footer Styling */
