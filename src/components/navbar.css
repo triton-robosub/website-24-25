@@ -32,6 +32,12 @@ nav ul li a:hover {
     color: #007bff;
 }
 
+img {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
 /* Dropdown Content */
 .dropdown-content {
     display: block;
@@ -65,58 +71,4 @@ nav ul li a:hover {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.3 ease;
-}
-
-/* Footer Styling */
-footer {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    background-color: #f8f9fa;
-    color: #333;
-    text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid #ddd;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer ul li {
-    display: inline;
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-footer ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Sticky Footer */
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
-main {
-    flex: 1; /* Pushes footer to the bottom */
-}
-
-footer {
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 10px 0;
 }

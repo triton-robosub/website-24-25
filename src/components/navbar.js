@@ -7,13 +7,10 @@ function Navbar() {
             <ul>
                 <li>
                     <a href="../index.html">
-                        <img
-                            src="../images/logotransparent.png"
-                            alt="Triton Robosub Logo"
-                        />
+                        <img src={require("../images/logotransparent.png")} alt="Triton Robosub Logo"/>
                     </a>
                 </li>
-                <li class="dropdown">
+                {/* <li class="dropdown">
                     <a href="../about">about</a>
                     <ul class="dropdown-content">
                         <li>
@@ -25,7 +22,7 @@ function Navbar() {
                             <a href="../about/alumni.html">alumni</a>
                         </li>
                     </ul>
-                </li>
+                </li> */}
                 <li class="dropdown">
                     <a href="../auv">auv</a>
                     <ul class="dropdown-content">
@@ -44,12 +41,12 @@ function Navbar() {
                     </ul>
                 </li>
 
-                <li>
+                {/* <li>
                     <a href="../blog.html">blog</a>
                 </li>
                 <li>
                     <a href="../gallery.html">gallery</a>
-                </li>
+                </li> */}
                 <li>
                     <a href="../sponsors.html">sponsors</a>
                 </li>

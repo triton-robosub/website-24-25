@@ -1,16 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./src/App.jsx";
+import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from "./components/Navbar.js";
 import Footer from "./components/Footer.js";
-import Blog from "./src/components/blog.jsx";
+import Blog from "./blog.jsx";
 import Contact from "./contactus.jsx";
 import Gallery from "./gallery.jsx";
 import Index from "./index.jsx";
-import Sponsors from "./src/components/sponsors.jsx";
-import ErrorElement from "./src/components/ErrorElement.jsx";
+import Sponsors from "./sponsors.jsx";
+import ErrorElement from "./ErrorElement.jsx";
 
 {
     /* <Routing logic for page> */
