@@ -1,14 +1,12 @@
-import React from "react";
-
-function Software() {
+function Auv() {
     return (
         <div>
             <div className="container">
-                <h1>Welcome to Software team</h1>
+                <h1>Welcome to My Auv</h1>
                 <p>This is a paragraph.</p>
             </div>
         </div>
     );
 }
 
-export default Software;
+export default Auv;

@@ -1,14 +1,14 @@
 import React from "react";
 
-function Software() {
+function Team() {
     return (
         <div>
-            <div className="container">
-                <h1>Welcome to Software team</h1>
+            <div>
+                <h1>Welcome to Team Page</h1>
                 <p>This is a paragraph.</p>
             </div>
         </div>
     );
 }
 
-export default Software;
+export default Team;

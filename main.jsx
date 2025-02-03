@@ -39,3 +39,9 @@ createRoot(document.getElementById("root")).render(
         <RouterProvider router={router} />
     </StrictMode>
 );
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+);
