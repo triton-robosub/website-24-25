@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function AboutUs() {
     return (
@@ -12,7 +13,9 @@ function AboutUs() {
                 strengthen their skills in computer vision, engineering
                 fundamentals, and most importantly, teamwork!
             </p>
-            <button>Check out the Team</button>
+            <Link to="/auv">
+                <button>Check out the Team</button>
+            </Link>
         </div>
     );
 }
