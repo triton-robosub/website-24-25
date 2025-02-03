@@ -27,6 +27,7 @@ function App() {
             <Router>
                 <Navbar2 />
                 <Routes>
+                    <Route path="/" element={<AboutUs />} />
                     <Route path="/about" element={<AboutUs />} />
                     <Route path="/software" element={<Software />} />
                     <Route path="/blog" element={<Blog />} />
@@ -45,15 +46,6 @@ function App() {
             {/* <LandingPage /> */}
             <main className="content-container">
                 <Outlet />
-                <p>
-                    Welcome to our page! We're the Robosub team for the
-                    University of California, San Diego. We're a diverse family,
-                    with interests in computer science, engineering, and more --
-                    including a passion to create an Autonomous Underwater
-                    Vehicle (AUV). Our members seek to strengthen their skills
-                    in computer vision, engineering fundamentals, and most
-                    importantly, teamwork!
-                </p>
             </main>
             <Footer />
         </div>
