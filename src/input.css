@@ -1,1 +1,9 @@
 @import "tailwindcss";
+.buttonCard {
+    font-weight: bold;
+    width: 350px;
+    height: 350px;
+}
+.buttonCard:hover {
+    background-color: aquamarine;
+}
