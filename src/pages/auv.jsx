@@ -1,27 +1,30 @@
 import "../output.css";
 import "../input.css";
+import "./auv.css";
+import picture from "../assets/logotransparent.png";
 
 function Auv() {
     return (
         <div>
             {/* Hero section */}
             <section>
-                <div>
-                    <h1>AUV</h1>
-                    <p>
+                <div className="hero-container">
+                    <h1 className="section-head">AUV</h1>
+                    <p className="hero-description">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Repellendus consequatur iusto soluta aperiam
                         molestiae doloribus maxime quibusdam voluptatum
                         officiis, eum sequi! Qui consectetur iste esse, fugiat
                         dignissimos illo repellendus magni.
                     </p>
+                    <AUVImage />
                 </div>
             </section>
 
             {/* Overview section */}
             <section>
                 <div>
-                    <h2>Overview</h2>
+                    <h2 className="section-head">Overview</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolor tempora eius aliquid illo recusandae excepturi
@@ -33,16 +36,17 @@ function Auv() {
             </section>
             {/* Cards section */}
             <section>
-                <div>
-                    <p className="bg-red-300">placeholder for cards</p>
+                <div className="card-container">
                     <SoftwareTeamCard />
+                    <MechanicalTeamCard />
+                    <ElectricalTeamCard />
                 </div>
             </section>
 
             {/* Technical paper section */}
             <section>
                 <div>
-                    <h2 className="font-bold">Technical Paper</h2>
+                    <h2 className="section-head">Technical Paper</h2>
                     <p>An insight into the technicalities of our submarine</p>
                 </div>
             </section>
@@ -50,13 +54,43 @@ function Auv() {
     );
 }
 
+function AUVImage() {
+    return (
+        <div>
+            <img src={picture} className="picture" alt="Logo" />
+        </div>
+    );
+}
+
 function SoftwareTeamCard() {
     return (
         <button
-            className="buttonCard bg-blue-500 rounded-lg"
+            className="buttonCard software"
             onClick={() => alert("Button clicked!")}
         >
             Software
+        </button>
+    );
+}
+
+function MechanicalTeamCard() {
+    return (
+        <button
+            className="buttonCard mechanical"
+            onClick={() => alert("Button clicked!")}
+        >
+            Mechanical
+        </button>
+    );
+}
+
+function ElectricalTeamCard() {
+    return (
+        <button
+            className="buttonCard electrical"
+            onClick={() => alert("Button clicked!")}
+        >
+            Electrical
         </button>
     );
 }
