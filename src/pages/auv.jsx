@@ -2,6 +2,8 @@ import "../output.css";
 import "../input.css";
 import "./auv.css";
 import picture from "../assets/logotransparent.png";
+import { Worker, Viewer } from "@react-pdf-viewer/core";
+import "@react-pdf-viewer/core/lib/styles/index.css";
 
 function Auv() {
     return (
@@ -9,14 +11,17 @@ function Auv() {
             {/* Hero section */}
             <section>
                 <div className="hero-container">
-                    <h1 className="section-head">AUV</h1>
-                    <p className="hero-description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Repellendus consequatur iusto soluta aperiam
-                        molestiae doloribus maxime quibusdam voluptatum
-                        officiis, eum sequi! Qui consectetur iste esse, fugiat
-                        dignissimos illo repellendus magni.
-                    </p>
+                    <div className="hero-desc-container">
+                        <h1 className="section-head">AUV</h1>
+                        <p className="hero-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Repellendus consequatur iusto soluta aperiam
+                            molestiae doloribus maxime quibusdam voluptatum
+                            officiis, eum sequi! Qui consectetur iste esse,
+                            fugiat dignissimos illo repellendus magni.
+                        </p>
+                    </div>
+
                     <AUVImage />
                 </div>
             </section>
@@ -49,6 +54,7 @@ function Auv() {
                     <h2 className="section-head">Technical Paper</h2>
                     <p>An insight into the technicalities of our submarine</p>
                 </div>
+                <TechnicalReport />
             </section>
         </div>
     );
@@ -58,6 +64,16 @@ function AUVImage() {
     return (
         <div>
             <img src={picture} className="picture" alt="Logo" />
+        </div>
+    );
+}
+
+function TechnicalReport() {
+    return (
+        <div>
+            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+                <Viewer fileUrl="../assets/TDR_TritonRobosub_RS2023.pdf" />;
+            </Worker>
         </div>
     );
 }
