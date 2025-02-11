@@ -21,22 +21,23 @@ function Auv() {
                             fugiat dignissimos illo repellendus magni.
                         </p>
                     </div>
-
-                    <AUVImage />
                 </div>
             </section>
 
             {/* Overview section */}
             <section>
-                <div>
-                    <h2 className="section-head">Overview</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolor tempora eius aliquid illo recusandae excepturi
-                        deserunt enim laudantium, nam perferendis facere
-                        doloribus quia eos rem atque maxime temporibus, magnam
-                        aut.
-                    </p>
+                <div className="overview-container">
+                    <div className="overview-desc-container">
+                        <h2 className="section-head">Overview</h2>
+                        <p className="overview-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolor tempora eius aliquid illo recusandae
+                            excepturi deserunt enim laudantium, nam perferendis
+                            facere doloribus quia eos rem atque maxime
+                            temporibus, magnam aut.
+                        </p>
+                    </div>
+                    <AUVImage />
                 </div>
             </section>
             {/* Cards section */}
