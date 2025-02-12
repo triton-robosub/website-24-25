@@ -6,8 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Sponsors from "./pages/sponsors.jsx";
 import AboutUs from "./components/about.jsx";
-import Navbar from ".//components/navbar.js";
-import { Navbar2 } from "./components/navbar.jsx";
+import { Navbar } from "./components/navbar.jsx";
 import Overview from "./pages/overview.jsx";
 import Software from "./pages/software.jsx";
 import Blog from "./pages/blog.jsx";
@@ -18,6 +17,7 @@ import Team from "./pages/team.jsx";
 import Auv from "./pages/auv.jsx";
 import Electrical from "./pages/electrical.jsx";
 import Mechanical from "./pages/mechanical.jsx";
+
 function App() {
     return (
         <div>
@@ -25,7 +25,7 @@ function App() {
             {/* <Navbar /> */}
 
             <Router>
-                <Navbar2 />
+                <Navbar />
                 <Routes>
                     <Route path="/" element={<AboutUs />} />
                     <Route path="/about" element={<AboutUs />} />
