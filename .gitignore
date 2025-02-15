@@ -3,3 +3,6 @@
 
 #node modules
 node_modules
+
+#DS_store for Mac
+.DS_Store
