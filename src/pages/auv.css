@@ -89,11 +89,20 @@ h1 {
     font-weight: bold;
 }
 
+/* Report Section */
+
+.report-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .pdf-container {
     width: 100%;
     max-width: 800px; /* Adjust as needed */
     height: 90vh; /* 90% of the viewport height */
     overflow: auto; /* Enables scrolling */
     margin: auto;
-    border: 1px solid #ccc; /* Optional border */
+    border: 5px solid #8c7e7e; /* Optional border */
 }
