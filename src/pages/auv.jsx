@@ -4,16 +4,17 @@ import "./auv.css";
 import picture from "../assets/logotransparent.png";
 import { Worker, Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
+import "../components/components.css";
 
 function Auv() {
     return (
-        <div>
+        <div className="main-background2">
             {/* Hero section */}
             <section>
                 <div className="hero-container">
                     <div className="hero-desc-container">
-                        <h1 className="section-head">AUV</h1>
-                        <p className="hero-description">
+                        <h1 className="section-head oxanium-bold">AUV</h1>
+                        <p className="hero-description blinker-regular">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Repellendus consequatur iusto soluta aperiam
                             molestiae doloribus maxime quibusdam voluptatum
@@ -71,9 +72,9 @@ function AUVImage() {
 
 function TechnicalReport() {
     return (
-        <div>
-            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
-                <Viewer fileUrl="../assets/TDR_TritonRobosub_RS2023.pdf" />;
+        <div className="pdf-container">
+            <Worker workerUrl="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.worker.min.js">
+                <Viewer fileUrl="https://robosub-technical-report.s3.us-east-2.amazonaws.com/2023%20Technical%20Design%20Report.pdf" />
             </Worker>
         </div>
     );
