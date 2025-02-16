@@ -91,23 +91,17 @@ function SoftwareTeamCard() {
 
 function MechanicalTeamCard() {
     return (
-        <button
-            className="buttonCard mechanical"
-            onClick={() => alert("Button clicked!")}
-        >
-            Mechanical
-        </button>
+        <Link to="/mechanical">
+            <button className="buttonCard mechanical">Mechanical</button>
+        </Link>
     );
 }
 
 function ElectricalTeamCard() {
     return (
-        <button
-            className="buttonCard electrical"
-            onClick={() => alert("Button clicked!")}
-        >
-            Electrical
-        </button>
+        <Link to="/electrical">
+            <button className="buttonCard electrical">Electrical</button>
+        </Link>
     );
 }
 
