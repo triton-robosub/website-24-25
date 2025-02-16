@@ -1,43 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+.oxanium-semibold {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oxanium:wght@600&display=swap');
+.blinker-regular {
+  font-family: "Blinker", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* General Footer Styling */
 footer {
-  color: #ffffff; 
-  padding: 20px 0; 
-  font-size: 0.9rem; 
   display: flex;
-  gap: 20px;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #01293b;
+  background-color: #01293b; 
+  color: #01293b;
   text-align: center;
-  border-top: 1px solid #ddd;
-}
-  
-footer .footer-social {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5rem;
-    gap: 1rem; 
+  padding: 20px 0;
+  border-top: 1px solid ;
+  gap: 0;
 }
 
-footer .footer-container {
-    display: flex;
-    justify-content: center;
-}
-  
-footer .footer-social a {
-    color: #ffffff; 
-    text-decoration: none; 
-    font-size: 1.2rem; 
-    transition: color 0.3s ease;
-}
-  
-footer .footer-social a:hover {
-    color: #718096;
+/* Footer Content Box */
+.footer-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  max-width: 1200px;
 }
 
-a {
-  color: white;
+.footer-container {
+  justify-content: center;
+  flex-direction: row;
 }
 
+/* Footer Social Links */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #718096;
+}
+
+/* Footer Location Section */
+.footer-location {
+  display: flex;
+  flex-direction: column;
+  width: 10em;
+  gap: 0;
+}
+
+.loc p {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.loc {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer Navigation Links */
 footer ul {
   list-style: none;
   padding: 0;
@@ -54,14 +99,15 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   color: #007bff;
+  transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
   text-decoration: underline;
+  color: #0056b3;
 }
 
-/* Sticky Footer */
-
+/* Sticky Footer Layout */
 body {
   display: flex;
   flex-direction: column;
@@ -70,10 +116,12 @@ body {
 }
 
 main {
-  flex: 1; /* Pushes footer to the bottom */
+  flex: 1;
 }
 
+/* Icon Styling */
 .wh8 {
   width: 20px;
   height: 20px;
+  color: white;
 }
