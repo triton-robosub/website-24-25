@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-import React from 'react';
-import Navbar from './components/Navbar';
-import Footer from "./components/Footer";
-=======
 import React from "react";
 import Navbar from "./Navbar";
 import "./styles.css";
->>>>>>> f5ded83 (changed components name and exports)
 
 function App() {
     return (

@@ -1,51 +1,58 @@
 /* General Navigation Styling */
-nav ul {
-    display: flex; /* Horizontal layout */
+nav {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    list-style: none; /* Remove bullet points */
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    gap: 20px; /* Spacing between items */
+    justify-content: space-between; /* Ensures left and center alignment */
+    padding: 10px 20px;
+    background-color: #01293b;
 }
 
+/* Style for the left-aligned title */
+.navbar-left {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+/* Ensures the nav menu stays centered */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0; /* Center-align the navigation */
+    padding: 0;
+    gap: 20px;
+}
+
+/* Ensures nav links remain clickable */
 nav ul li {
     position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: white;
     padding: 10px 15px;
-    display: block; /* Ensures clickable area */
+    display: block;
     font-weight: bold;
 }
 
-nav ul li img {
-    height: 50px; /* Set a specific height for the logo */
-    width: auto; /* Maintain aspect ratio */
-}
-
+/* Ensures hover effects remain */
 nav ul li a:hover {
     background-color: #ddd;
     color: #007bff;
 }
 
-img {
-    display: block;
-    width: auto;
-    height: auto;
-  }
-
 /* Dropdown Content */
 .dropdown-content {
     display: block;
-    position: absolute; /* Positioned relative to parent */
+    position: absolute;
     background-color: #fff;
-    min-width: 160px; /* Minimum width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    z-index: 1; /* Ensure it appears above other elements */
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
     padding: 10px 0;
     visibility: hidden;
     opacity: 0;
@@ -53,16 +60,16 @@ img {
 }
 
 .dropdown-content li {
-    display: block; /* Stack dropdown items */
+    display: block;
 }
 
 .dropdown-content li a {
-    padding: 10px 15px; /* Add padding */
-    color: #333; /* Dropdown link color */
+    padding: 10px 15px;
+    color: #333;
 }
 
 .dropdown-content li a:hover {
-    background-color: #f0f0f0; /* Highlight on hover */
+    background-color: #f0f0f0;
 }
 
 /* Show Dropdown on Hover */

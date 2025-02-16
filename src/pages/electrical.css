@@ -1,0 +1,24 @@
+.electrical-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.electrical-top {
+    width: 100%;
+    height: 20vh; /* Adjust height as needed */
+
+    background-image: 
+        linear-gradient(rgba(1, 107, 150, 0.4), rgba(1, 107, 150, 0.4)),
+        url("../images/image.png"); /* Update with the actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white; /* Ensures text is readable */
+    text-align: center;
+    padding: 20px;
+}

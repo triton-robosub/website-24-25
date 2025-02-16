@@ -1,49 +1,41 @@
 footer {
-    background-color: #1a202c; 
-    color: #ffffff; 
-    text-align: left;
-    padding: 1rem 0; 
-    font-size: 0.9rem; 
-  }
-  
-  footer .footer-social {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5rem;
-    gap: 1rem; 
-  }
-
-  footer .footer-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  footer .footer-social a {
-    color: #ffffff; 
-    text-decoration: none; 
-    font-size: 1.2rem; 
-    transition: color 0.3s ease;
-  }
-  
-  footer .footer-social a:hover {
-    color: #718096;
-  }
-
-  a {
-    color: white;
-  }
-
-  /* Footer Styling */
-footer {
+  color: #ffffff; 
+  padding: 20px 0; 
+  font-size: 0.9rem; 
   display: flex;
   gap: 20px;
   align-items: center;
   justify-content: center;
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: #01293b;
   text-align: center;
-  padding: 20px 0;
   border-top: 1px solid #ddd;
+}
+  
+footer .footer-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    gap: 1rem; 
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: center;
+}
+  
+footer .footer-social a {
+    color: #ffffff; 
+    text-decoration: none; 
+    font-size: 1.2rem; 
+    transition: color 0.3s ease;
+}
+  
+footer .footer-social a:hover {
+    color: #718096;
+}
+
+a {
+  color: white;
 }
 
 footer ul {
@@ -79,12 +71,6 @@ body {
 
 main {
   flex: 1; /* Pushes footer to the bottom */
-}
-
-footer {
-  background-color: #f8f9fa;
-  text-align: center;
-  padding: 10px 0;
 }
 
 .wh8 {

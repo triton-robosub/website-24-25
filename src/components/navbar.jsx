@@ -5,6 +5,9 @@ import "./navbar.css";
 export const Navbar2 = () => {
     return (
         <nav>
+            <div className="navbar-left">
+                Triton Robosub
+            </div>
             <ul>
                 <li className="dropdown">
                     <Link to="/about">about</Link>
