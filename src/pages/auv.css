@@ -98,6 +98,10 @@ h1 {
     text-align: center;
 }
 
+.pdf-description {
+    margin-left: 10vh;
+}
+
 .pdf-container {
     width: 100%;
     max-width: 800px; /* Adjust as needed */

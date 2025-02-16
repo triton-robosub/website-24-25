@@ -53,7 +53,7 @@ function Auv() {
 
             {/* Technical paper section */}
             <section className="report-container">
-                <div>
+                <div className="pdf-description">
                     <h2 className="section-head">Technical Paper</h2>
                     <p>An insight into the technicalities of our submarine</p>
                 </div>
