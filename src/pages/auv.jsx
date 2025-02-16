@@ -5,6 +5,7 @@ import picture from "../assets/logotransparent.png";
 import { Worker, Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "../components/components.css";
+import { Link } from "react-router-dom";
 
 function Auv() {
     return (
@@ -82,12 +83,9 @@ function TechnicalReport() {
 
 function SoftwareTeamCard() {
     return (
-        <button
-            className="buttonCard software"
-            onClick={() => alert("Button clicked!")}
-        >
-            Software
-        </button>
+        <Link to="/software">
+            <button className="buttonCard software">Software</button>
+        </Link>
     );
 }
 
