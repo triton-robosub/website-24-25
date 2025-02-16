@@ -14,17 +14,27 @@
 }
 
 /* General Navigation Styling */
-nav ul {
-    display: flex; /* Horizontal layout */
+nav {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    list-style: none; /* Remove bullet points */
-    margin: 0;
+    justify-content: center; /* Centers the navigation */
+    padding: 10px 20px;
+    background-color: #01293b;
+}
+
+
+/* Ensures the nav menu stays centered */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0; /* Center-align the navigation */
     padding: 0;
     background-color: #01293b;
     gap: 20px; /* Spacing between items */
 }
 
+/* Ensures nav links remain clickable */
 nav ul li {
     position: relative;
 }
@@ -33,15 +43,11 @@ nav ul li a {
     text-decoration: none;
     color: white;
     padding: 10px 15px;
-    display: block; /* Ensures clickable area */
+    display: block;
     font-weight: bold;
 }
 
-nav ul li img {
-    height: 50px; /* Set a specific height for the logo */
-    width: auto; /* Maintain aspect ratio */
-}
-
+/* Ensures hover effects remain */
 nav ul li a:hover {
     background-color: #ffd31e;
     color: black;
@@ -68,12 +74,12 @@ img {
 }
 
 .dropdown-content li {
-    display: block; /* Stack dropdown items */
+    display: block;
 }
 
 .dropdown-content li a {
-    padding: 10px 15px; /* Add padding */
-    color: #333; /* Dropdown link color */
+    padding: 10px 15px;
+    color: #333;
 }
 
 .dropdown-content li a:hover {
