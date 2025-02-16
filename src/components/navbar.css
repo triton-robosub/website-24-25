@@ -17,19 +17,11 @@
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures left and center alignment */
+    justify-content: center; /* Centers the navigation */
     padding: 10px 20px;
     background-color: #01293b;
 }
 
-/* Style for the left-aligned title */
-.navbar-left {
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-
-}
 
 /* Ensures the nav menu stays centered */
 nav ul {

@@ -6,9 +6,6 @@ import logo from "../assets/logo.png";
 export const Navbar = () => {
     return (
         <nav>
-            <div className="navbar-left">
-                Triton Robosub
-            </div>
             <ul>
                 <li>
                 <div className="logo-flex-container">
