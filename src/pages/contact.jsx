@@ -2,19 +2,18 @@ import React from "react";
 import "../output.css";
 import "../input.css";
 import "./auv.css";
+import "./contact.css";
 import { Link } from "react-router-dom";
 
 function Contact() {
     console.log("Rendering contact page");
     return (
         <div className="main-background2">
-            <div className="hero-container">
-                <h1>Interested in working with us?</h1>
-                <section className="report-container">
-                    <div className="card-container">
-                        <StudentButton />
-                        <SponsorsButton />
-                    </div>
+            <div className="main-container">
+                <h1 className="title-text">Interested in working with us?</h1>
+                <section className="card-container">
+                    <StudentButton />
+                    <SponsorsButton />
                 </section>
             </div>
         </div>
