@@ -29,14 +29,12 @@ function App() {
                 <Routes>
                     <Route path="/" element={<AboutUs />} />
                     <Route path="/about" element={<AboutUs />} />
-                    <Route path="/software" element={<Software />} />
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/alumni" element={<Alumni />} />
                     <Route path="/sponsors" element={<Sponsors />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/team" element={<Team />} />
                     <Route path="/auv" element={<Auv />} />
-                    <Route path="/alumni" element={<Alumni />} />
                     <Route path="/electrical" element={<Electrical />} />
                     <Route path="/software" element={<Software />} />
                     <Route path="/mechanical" element={<Mechanical />} />
