@@ -16,11 +16,19 @@ function Auv() {
                     <div className="hero-desc-container">
                         <h1 className="section-head oxanium-bold">AUV</h1>
                         <p className="hero-description blinker-regular">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Repellendus consequatur iusto soluta aperiam
-                            molestiae doloribus maxime quibusdam voluptatum
-                            officiis, eum sequi! Qui consectetur iste esse,
-                            fugiat dignissimos illo repellendus magni.
+                            Welcome to Triton Robosub! Our Autonomous Underwater
+                            Vehicle (AUV), “Nu”, is the culmination of teamwork,
+                            creativity, and innovation by undergraduate students
+                            at UC San Diego. Designed for the 2023 Robosub
+                            competition, Nu showcases our passion for underwater
+                            robotics and engineering excellence. With its sleek
+                            design and advanced capabilities, Nu is built to
+                            navigate underwater challenges with precision and
+                            reliability. It represents not just a technical
+                            achievement but also the dedication and
+                            collaboration of a team striving to push the
+                            boundaries of what student-led projects can
+                            accomplish.
                         </p>
                     </div>
                 </div>
@@ -32,11 +40,19 @@ function Auv() {
                     <div className="overview-desc-container">
                         <h2 className="section-head">Overview</h2>
                         <p className="overview-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolor tempora eius aliquid illo recusandae
-                            excepturi deserunt enim laudantium, nam perferendis
-                            facere doloribus quia eos rem atque maxime
-                            temporibus, magnam aut.
+                            “Nu” is an advanced Autonomous Underwater Vehicle
+                            (AUV) developed by undergraduate students at UC San
+                            Diego for the 2023 Robosub competition. It features
+                            a custom-designed HDPE frame with six degrees of
+                            freedom, enabling precise maneuverability. The AUV
+                            integrates modular electrical systems, including a
+                            Jetson Xavier NX for mission planning and advanced
+                            sensors like Doppler Velocity Log (DVL) and
+                            exploreHD cameras for underwater navigation and
+                            imaging. With robust mechanical, electrical, and
+                            software systems, “Nu” represents a fully realized
+                            platform designed for efficient and reliable
+                            underwater exploration.
                         </p>
                     </div>
                     <AUVImage />
@@ -75,7 +91,7 @@ function TechnicalReport() {
     return (
         <div className="pdf-container">
             <Worker workerUrl="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.worker.min.js">
-                <Viewer fileUrl="https://robosub-technical-report.s3.us-east-2.amazonaws.com/2023%20Technical%20Design%20Report.pdf" />
+                <Viewer fileUrl="https://robosub-technical-report.s3.us-east-2.amazonaws.com/TDR_TritonRobosub_RS2023+2.pdf" />
             </Worker>
         </div>
     );
