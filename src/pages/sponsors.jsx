@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-function Sponsors() {
+function App() {
     return (
         <div>
             <div className="container">
-                <h1>Welcome to the Sponsors Page</h1>
+                <h1>Welcome to My Website</h1>
                 <p>This is a paragraph.</p>
             </div>
         </div>
     );
 }
 
-export default Sponsors;
+export default App;
