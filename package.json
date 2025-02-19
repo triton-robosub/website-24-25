@@ -20,7 +20,7 @@
     "robotics",
     "auv"
   ],
-  "author": "phylicia wang, lucas yan",
+  "author": "phylicia wang, lucas yan, weston zong",
   "license": "ISC",
   "dependencies": {
     "react": "^19.0.0",
