@@ -31,7 +31,9 @@ function StudentButton() {
 function SponsorsButton() {
     return (
         <Link to="/">
-            <button className="buttonCard"> SponSOrINg US?!?!!?!?!?!?!</button>
+            <button className="buttonCard">
+                Interested in being a Sponsor?
+            </button>
         </Link>
     );
 }
