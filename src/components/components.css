@@ -14,11 +14,13 @@
 }
 
 .main-background {
-  background-image: url('../assets/placeholder.jpg');
+  background-image: linear-gradient(to right, #00293B, #006A9600),
+  url('../assets/vehicle.png');
   background-repeat: no-repeat;
   background-size: cover;  
   background-position: center;  
   background-attachment: scroll; 
+
   width: 100%;
   min-height: 100vh; 
   display: flex;
@@ -29,22 +31,36 @@
 }
 
 .welcome-container {
-  display: flex;
+  display: inline-flex;
   flex-direction: column; 
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  gap: 1em; 
 }
 
 .welcome-box {
   width: 30em;
-  padding: 1em;
   color: white;
-  border-radius: 0.5em;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.button {
+  background-color: #ffd31e;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button .a {
+  text-decoration: none;
+}
+
+.button:hover {
+  color: white;
 }
