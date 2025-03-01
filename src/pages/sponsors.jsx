@@ -1,12 +1,18 @@
-import React from 'react';
+import React from "react";
+import "./auvpages.css";
+import "../components/footer.css";
+
 
 function App() {
     return (
         <div>
             <div className="container">
-                <h1>Welcome to My Website</h1>
-                <p>This is a paragraph.</p>
+                <div className="top">
+                    <h1 className="oxanium-semibold"> Our Sponsors</h1>
+                    <p className="blinker-regular"></p>
+                </div>
             </div>
+          
         </div>
     );
 }
