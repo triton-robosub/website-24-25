@@ -11,8 +11,5 @@
     "main.df7a13b8.css.map": "/website-24-25/static/css/main.df7a13b8.css.map",
     "main.9a6547ba.js.map": "/website-24-25/static/js/main.9a6547ba.js.map"
   },
-  "entrypoints": [
-    "static/css/main.df7a13b8.css",
-    "static/js/main.9a6547ba.js"
-  ]
+  "entrypoints": ["static/css/main.df7a13b8.css", "static/js/main.9a6547ba.js"]
 }
