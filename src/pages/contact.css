@@ -1,0 +1,119 @@
+/* Hero section */
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.title-text {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+p,
+h2,
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+.hero-description {
+    font-size: 1rem;
+    text-align: centewr;
+    max-width: 1000px;
+}
+
+.overview-container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.overview-desc.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overview-description {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 600px; /* Limit width for readability */
+}
+
+.picture {
+    width: 400px;
+    height: 400px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1px;
+    margin: 10%;
+}
+
+.buttonCard {
+    font-weight: bold;
+    width: 320px;
+    height: 320px;
+    padding: 5px;
+    font-size: xx-large;
+    border-radius: 20%;
+    overflow: hidden;
+    background-color: bisque;
+    margin: 5vh;
+}
+.buttonCard:hover {
+    background-color: aquamarine;
+    transition: background-color 0.3s ease-in;
+}
+
+.electrical {
+    background-color: #4fa3e3; /* Light blue for Electrical */
+}
+
+/* Mechanical card specific styles */
+.mechanical {
+    background-color: #003b66; /* Dark blue for Mechanical */
+    position: relative;
+}
+
+.software {
+    background-color: mediumblue;
+}
+
+/* Section Headers  */
+.section-head {
+    font-size: 3rem; /* Adjust size */
+    font-weight: bold;
+}
+
+/* Report Section */
+
+.report-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pdf-description {
+    margin-left: 10vh;
+}
+
+.pdf-container {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    height: 90vh; /* 90% of the viewport height */
+    overflow: auto; /* Enables scrolling */
+    margin: auto;
+    border: 5px solid #8c7e7e; /* Optional border */
+}
