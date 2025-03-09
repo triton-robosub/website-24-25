@@ -1,12 +1,20 @@
 import React from "react";
+import "./auvpages.css";
+import "../components/footer.css";
+
 
 function Electrical() {
     return (
         <div>
             <div className="container">
-                <h1>Welcome to Electrical Team</h1>
-                <p>This is a paragraph.</p>
+                <div className="top">
+                    <h1 className="oxanium-semibold">Electrical</h1>
+                    <p className="blinker-regular">The electrical subteam focuses on not only designing custom electronics 
+                        (circuit-design, analog, PCB, ...), 
+                        but also works with the software team to interface with all the sensors and actuators.</p>
+                </div>
             </div>
+          
         </div>
     );
 }
