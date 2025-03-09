@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import { Outlet } from "react-router-dom";
 import Footer from ".//components/footer.js";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 import Sponsors from "./pages/sponsors.jsx";
 import AboutUs from "./components/about.jsx";
