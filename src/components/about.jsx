@@ -16,7 +16,7 @@ function AboutUs() {
                     fundamentals, and most importantly, teamwork!
                 </p>
                 <Link to="/auv">
-                    <button className="welcome-box">Check out our team!</button>
+                    <button className="welcome-box oxanium-semibold button">Check out our team!</button>
                 </Link>
             </div>
         </div>
