@@ -22,30 +22,7 @@
         "ucsd",
         "robotics",
         "auv"
-  "name": "website-24-25",
-  "version": "1.0.0",
-  "description": "triton robosub website for 2024-2025",
-  "main": "navbar.js",
-  "homepage": "https://triton-robosub.github.io/website-24-25/",
-  "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "website-24-25"
-  },
-  "keywords": [
-    "triton",
-    "robosub",
-    "ucsd",
-    "robotics",
-    "auv"
-  ],
+    ],
   "author": "phylicia wang, lucas yan, weston zong",
   "license": "ISC",
   "dependencies": {
@@ -103,4 +80,5 @@
             "last 1 safari version"
         ]
     }
+  }
 }
