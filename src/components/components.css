@@ -14,7 +14,12 @@
 }
 
 .main-background {
-  background-image: url("../assets/placeholder.png");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 106, 150, 0.7),
+      rgba(0, 41, 59, 0.7)
+    ),
+    url("../assets/vehicle.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -29,7 +34,12 @@
 }
 
 .main-background2 {
-  background-image: url("../assets/placeholder.png");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 106, 150, 0.7),
+      rgba(0, 41, 59, 0.7)
+    ),
+    url("../assets/vehicle.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -58,4 +68,3 @@
   justify-content: center;
   align-items: center;
 }
-
