@@ -8,7 +8,6 @@ import Overview from "./pages/overview.jsx";
 import Software from "./pages/software.jsx";
 import Blog from "./pages/blog.jsx";
 import Gallery from "./components/gallery.jsx";
-import Alumni from "./pages/alumni.jsx";
 import Contact from "./pages/contact.jsx";
 import Team from "./pages/team/team.jsx";
 import Auv from "./pages/auv.jsx";
@@ -24,7 +23,6 @@ function App() {
         <Route path="/" element={<AboutUs />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/alumni" element={<Alumni />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/team" element={<Team />} />
