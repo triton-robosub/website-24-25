@@ -21,22 +21,10 @@ export const Navbar = () => {
                         </Link>
                     </div>
                 </li>
-                <li className="dropdown">
-                    <Link to="/about" className="blinker-regular">
-                        about
+                <li>
+                    <Link to="/team" className="blinker-regular">
+                        meet the team
                     </Link>
-                    <ul className="dropdown-content">
-                        <li>
-                            <Link to="/alumni" className="blinker-regular">
-                                alumni
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/team" className="blinker-regular">
-                                meet the team
-                            </Link>
-                        </li>
-                    </ul>
                 </li>
                 <li className="dropdown">
                     <Link to="/auv" className="blinker-regular">
@@ -69,12 +57,6 @@ export const Navbar = () => {
                     <Link to="/blog" className="blinker-regular">
                         {" "}
                         blog{" "}
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/alumni" className="blinker-regular">
-                        {" "}
-                        alumni{" "}
                     </Link>
                 </li>
                 <li>
