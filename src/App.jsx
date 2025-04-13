@@ -1,6 +1,4 @@
-import { Outlet } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import Sponsors from "./pages/sponsors.jsx";
 import AboutUs from "./components/about.jsx";
 import { Navbar } from "./components/navbar.jsx";
@@ -17,7 +15,7 @@ import Footer from "./components/footer.js";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/website-24-25">
       <Navbar />
       <Routes>
         <Route path="/" element={<AboutUs />} />
@@ -32,12 +30,8 @@ function App() {
         <Route path="/mechanical" element={<Mechanical />} />
         <Route path="/overview" element={<Overview />} />
       </Routes>
-      <main className="content-container">
-        <Outlet />
-      </main>
       <Footer />
     </Router>
-    
   );
 }
 
