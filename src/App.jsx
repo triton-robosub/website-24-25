@@ -36,7 +36,7 @@ function App() {
         <Outlet />
       </main>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
