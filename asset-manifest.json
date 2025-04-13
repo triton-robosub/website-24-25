@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/website-24-25/static/css/main.ab919cd2.css",
-    "main.js": "/website-24-25/static/js/main.23d9736e.js",
+    "main.js": "/website-24-25/static/js/main.a84ef5ae.js",
     "static/media/vehicle.png": "/website-24-25/static/media/vehicle.e8b6f9728a9436164b5e.png",
     "static/media/image.png": "/website-24-25/static/media/image.40b7294d9594ffcfe81c.png",
     "static/media/meettheteam.png": "/website-24-25/static/media/meettheteam.05228f6377693b22738d.png",
     "static/media/logo.png": "/website-24-25/static/media/logo.790b0f94d77965a2edc1.png",
     "index.html": "/website-24-25/index.html",
     "main.ab919cd2.css.map": "/website-24-25/static/css/main.ab919cd2.css.map",
-    "main.23d9736e.js.map": "/website-24-25/static/js/main.23d9736e.js.map"
+    "main.a84ef5ae.js.map": "/website-24-25/static/js/main.a84ef5ae.js.map"
   },
   "entrypoints": [
     "static/css/main.ab919cd2.css",
-    "static/js/main.23d9736e.js"
+    "static/js/main.a84ef5ae.js"
   ]
 }
