@@ -1,13 +1,12 @@
 import React from "react";
 import "./footer.css";
-import logo from "../assets/logo.png";
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-box">
-                    <img src={logo} alt="logo" style={{ height:"50px", width: "50px"}} />
+                    <img src={"/assets/logo.png"} alt="logo" style={{ height:"50px", width: "50px"}} />
                 </div>
                 <div className="footer-box">
                     <div className="footer-location">

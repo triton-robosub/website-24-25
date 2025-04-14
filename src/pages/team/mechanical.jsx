@@ -1,54 +1,35 @@
 import React from "react";
 import "../team.css";
+import kaifeng from "../../assets/headshots/kaifeng.png";
+import weifung from "../../assets/headshots/weifung.png";
+import morgan from "../../assets/headshots/morgan.png";
+import rosslyn from "../../assets/headshots/rosslyn.png";
+
 const mechanicalTeamMembers = [
   {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
+    name: "Weifung Goh",
+    specifics: "President",
+    linkedin: "https://www.linkedin.com/in/weifunggoh",
+    headshot: weifung,
   },
   {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
+    name: "Morgan Rockwell",
+    specifics: "Mechanical Member",
+    linkedin: "https://www.linkedin.com/in/morgan-rockwell-64a180354",
+    headshot: morgan,
   },
   {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
+    name: "Rosslyn Farnan",
+    specifics: "Mechanical Member",
+    linkedin: "https://www.linkedin.com/in/rosslyn-farnan-a9008a300/",
+    headshot: rosslyn,
   },
   {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
-  {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
-  {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
-  {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
-  {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
+    name: "Kaifeng Chen",
+    specifics: "Mechanical Member",
+    linkedin: "https://www.linkedin.com/in/kaifeng-chen/",
+    headshot: kaifeng,
+  }
 ];
 
 function MechanicalTeam() {
@@ -65,15 +46,25 @@ function MechanicalTeam() {
       <div className="team-grid">
         {mechanicalTeamMembers.map((member, index) => (
           <div key={index} className="team-member">
-            <div className="profile-placeholder"></div>
-            <div className="text">
-              <h2>{member.name}</h2>
-              <p>
-                {member.major}, {member.gradYear}
-              </p>
-              <p className="role">{member.specifics}</p>
-            </div>
+          <img
+            src={member.headshot}
+            alt={`${member.name}'s headshot`}
+            className="headshot"
+          />
+          <div className="text">
+          <h2>{member.name}</h2>
+            <p className="role">{member.specifics}</p>
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkedin-button"
+            >
+              <i className="fab fa-linkedin" style={{ marginRight: "6px" }}></i>
+              LinkedIn
+            </a>
           </div>
+        </div>
         ))}
       </div>
     </div>

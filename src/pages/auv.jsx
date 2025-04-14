@@ -82,7 +82,7 @@ function Auv() {
 function AUVImage() {
     return (
         <div>
-            <img src={picture} className="picture" alt="Logo" />
+            <img src="./assets/logo.png" className="picture" alt="Logo" />
         </div>
     );
 }

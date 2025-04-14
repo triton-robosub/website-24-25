@@ -1,9 +1,8 @@
 {
     "name": "website-24-25",
     "version": "1.0.0",
-    "homepage": "https://triton-robosub.github.io/website-24-25/",
+    "homepage": "https://triton-robosub.github.io/",
     "description": "triton robosub website for 2024-2025",
-    "main": "navbar.js",
     "scripts": {
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
