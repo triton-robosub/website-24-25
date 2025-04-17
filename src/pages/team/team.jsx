@@ -19,7 +19,7 @@ function Team() {
         <MechanicalTeam />
         <ElectricalTeam />
         <SoftwareTeam />
-        <MarketingTeam />
+        {/* <MarketingTeam /> */}
       </div>
     </div>
   );
