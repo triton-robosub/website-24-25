@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oxanium:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.gallery-container {
+    width: 100%;
+    min-height: auto;
+    background-color: #e4ebee;
+    padding: 20px;
+}
+
+.gallery-hero {
+    width: 100%;
+    padding: 80px 20px;
+    text-align: center;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 106, 150, 0.7),
+        rgba(0, 41, 59, 0.7)
+    ),
+    url("../assets/vehicle.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.gallery-hero h1 {
+    font-family: "Oxanium", sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.gallery-hero p {
+    font-family: "Blinker", sans-serif;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 300px;
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Specific layout positions */
+.gallery-item:nth-child(1) {
+    grid-column: span 4;
+    grid-row: span 1;
+    background-color: #01293B;
+}
+
+.gallery-item:nth-child(2) {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #9ECFE4;
+}
+
+.gallery-item:nth-child(3) {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: #006A96;
+}
+
+.gallery-item:nth-child(4) {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: #006A96;
+}
+
+.gallery-item:nth-child(5) {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: #9ECFE4;
+}
+
+.gallery-item:nth-child(6) {
+    grid-column: span 4;
+    grid-row: span 1;
+    background-color: #01293B;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+    }
+
+    .gallery-item {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+    .gallery-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .gallery-hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        padding: 10px;
+    }
+
+    .gallery-hero {
+        padding: 60px 20px;
+    }
+
+    .gallery-hero h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-grid {
+        gap: 15px;
+    }
+} 
