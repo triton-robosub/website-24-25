@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+.oxanium-semibold {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oxanium:wght@600&display=swap');
+.blinker-regular {
+  font-family: "Blinker", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* General Navigation Styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the navigation */
+    padding: 10px 20px;
+    background-color: #01293b;
+}
+
+
+/* Ensures the nav menu stays centered */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0; /* Center-align the navigation */
+    padding: 0;
+    background-color: #01293b;
+    gap: 20px; /* Spacing between items */
+}
+
+/* Ensures nav links remain clickable */
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Ensures hover effects remain */
+nav ul li a:hover {
+    background-color: #ffd31e;
+    color: black;
+}
+
+img {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+/* Dropdown Content */
+.dropdown-content {
+    display: block;
+    position: absolute; /* Positioned relative to parent */
+    background-color: #ffd31e;
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 1; /* Ensure it appears above other elements */
+    padding: 10px 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content li a {
+    padding: 10px 15px;
+    color: #333;
+}
+
+.dropdown-content li a:hover {
+    background-color: #ffd31e; /* Highlight on hover */
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.1 ease;
+}
+
+.logo-flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-flex-box {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.circle-logo {
+    border-radius: 50%; 
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.team-name {
+    color: white;
+}
