@@ -85,8 +85,6 @@ const Footer = () => {
                 3235 Voigt Dr, La Jolla, CA 92093
               </p>
             </div>
-          </div>
-        </div>
         <div className="footer-box footer-social white">
           <a href="https://instagram.com/tritonrobosub" aria-label="instagram">
             <svg
@@ -142,9 +140,8 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-      </div>
-    </footer>
-  );
+      </footer>
+    )
 };
 
 export default Footer;
