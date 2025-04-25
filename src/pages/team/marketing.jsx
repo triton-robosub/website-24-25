@@ -1,30 +1,14 @@
 import React from "react";
 import "../team.css";
+import darin from "../../assets/headshots/darin.png";
+
 const marketingTeamMembers = [
   {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
-  {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
-  {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
-  {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
+    name: "Darin Djapri",
+    specifics: "Software Team Lead",
+    linkedin: "https://www.linkedin.com/in/darin-djapri-a91143214/",
+    headshot: darin,
+  }
 ];
 
 function MarketingTeam() {
@@ -41,15 +25,25 @@ function MarketingTeam() {
       <div className="team-grid">
         {marketingTeamMembers.map((member, index) => (
           <div key={index} className="team-member">
-            <div className="profile-placeholder"></div>
-            <div className="text">
-              <h2>{member.name}</h2>
-              <p>
-                {member.major}, {member.gradYear}
-              </p>
-              <p className="role">{member.specifics}</p>
-            </div>
+          <img
+            src={member.headshot}
+            alt={`${member.name}'s headshot`}
+            className="headshot"
+          />
+          <div className="text">
+          <h2>{member.name}</h2>
+            <p className="role">{member.specifics}</p>
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkedin-button"
+            >
+              <i className="fab fa-linkedin" style={{ marginRight: "6px" }}></i>
+              LinkedIn
+            </a>
           </div>
+        </div>
         ))}
       </div>
     </div>

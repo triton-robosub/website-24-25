@@ -1,5 +1,6 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/website-24-25/static/css/main.ab919cd2.css",
     "main.js": "/website-24-25/static/js/main.a84ef5ae.js",
     "static/media/vehicle.png": "/website-24-25/static/media/vehicle.e8b6f9728a9436164b5e.png",
@@ -13,5 +14,19 @@
   "entrypoints": [
     "static/css/main.ab919cd2.css",
     "static/js/main.a84ef5ae.js"
+=======
+    "main.css": "/static/css/main.238797b0.css",
+    "main.js": "/static/js/main.cca3fb96.js",
+    "static/media/vehicle.png": "/static/media/vehicle.e8b6f9728a9436164b5e.png",
+    "static/media/image.png": "/static/media/image.40b7294d9594ffcfe81c.png",
+    "static/media/meettheteam.png": "/static/media/meettheteam.05228f6377693b22738d.png",
+    "index.html": "/index.html",
+    "main.238797b0.css.map": "/static/css/main.238797b0.css.map",
+    "main.cca3fb96.js.map": "/static/js/main.cca3fb96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.238797b0.css",
+    "static/js/main.cca3fb96.js"
+>>>>>>> phylicia
   ]
 }

@@ -11,7 +11,7 @@ import Team from "./pages/team/team.jsx";
 import Auv from "./pages/auv.jsx";
 import Electrical from "./pages/electrical.jsx";
 import Mechanical from "./pages/mechanical.jsx";
-import Footer from "./components/footer.js";
+import Footer from "./components/footer.jsx";
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
         <Route path="/software" element={<Software />} />
         <Route path="/mechanical" element={<Mechanical />} />
         <Route path="/overview" element={<Overview />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
     </Router>

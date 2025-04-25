@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import logo from "../assets/logo.png";
 
 export const Navbar = () => {
     return (
@@ -11,7 +10,7 @@ export const Navbar = () => {
                     <div className="logo-flex-container">
                         <Link to="/" className="logo-flex-box">
                             <img
-                                src={logo}
+                                src={"../assets/logo.png"}
                                 alt="logo"
                                 className="circle-logo"
                             />
@@ -21,10 +20,22 @@ export const Navbar = () => {
                         </Link>
                     </div>
                 </li>
-                <li>
-                    <Link to="/team" className="blinker-regular">
-                        meet the team
+                <li className="dropdown">
+                    <Link to="/about" className="blinker-regular">
+                        about
                     </Link>
+                    <ul className="dropdown-content">
+                        <li>
+                            <Link to="/alumni" className="blinker-regular">
+                                alumni
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/team" className="blinker-regular">
+                                meet the team
+                            </Link>
+                        </li>
+                    </ul>
                 </li>
                 <li className="dropdown">
                     <Link to="/auv" className="blinker-regular">

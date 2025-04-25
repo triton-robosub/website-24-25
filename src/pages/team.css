@@ -6,7 +6,7 @@
       rgba(0, 106, 150, 0.5),
       rgba(0, 41, 59, 0.5)
     ),
-    url("../assets/meettheteam.png");
+    url("../assets/teampics/team.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -185,4 +185,32 @@
   font-family: "Blinker", sans-serif;
   font-weight: 400;
   font-size: 20px;
+}
+
+.headshot {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* ensures a square */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.linkedin-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  background-color: #0077b5;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.linkedin-button:hover {
+  background-color: #005f8d;
 }
