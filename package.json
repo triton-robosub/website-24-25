@@ -1,7 +1,7 @@
 {
     "name": "website-24-25",
     "version": "1.0.0",
-    "homepage": "https://triton-robosub.github.io/",
+    "homepage": "https://triton-robosub.github.io/website-24-25",
     "description": "triton robosub website for 2024-2025",
     "scripts": {
         "predeploy": "npm run build",
