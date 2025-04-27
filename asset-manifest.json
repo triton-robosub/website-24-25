@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.549e3205.css",
+    "main.js": "/static/js/main.32681c8c.js",
+    "static/media/placeholder.png": "/static/media/placeholder.e8b6f9728a9436164b5e.png",
+    "static/media/vehicle.png": "/static/media/vehicle.e8b6f9728a9436164b5e.png",
+    "static/media/image.png": "/static/media/image.40b7294d9594ffcfe81c.png",
+    "static/media/meettheteam.png": "/static/media/meettheteam.05228f6377693b22738d.png",
+    "static/media/laalith.png": "/static/media/laalith.833621be13c59de680d4.png",
+    "static/media/weifung.png": "/static/media/weifung.cb98b021a82933a0dc08.png",
+    "static/media/darin.png": "/static/media/darin.a0e6b84d02d3e1974692.png",
+    "static/media/andrew.png": "/static/media/andrew.ea72e35ea2c0b66de2dd.png",
+    "static/media/team.jpg": "/static/media/team.9cd4050982ffbbfc1b3e.jpg",
+    "static/media/edward.png": "/static/media/edward.d45becd865f90af2ca8d.png",
+    "static/media/morgan.png": "/static/media/morgan.4a56a0961e425435fdb5.png",
+    "static/media/weston.png": "/static/media/weston.53db9ae354fa62f6072e.png",
+    "static/media/phylicia.png": "/static/media/phylicia.85c07590cfab31fa263e.png",
+    "static/media/rosslyn.png": "/static/media/rosslyn.f79a80c3d7aa605502d9.png",
+    "static/media/ayush.png": "/static/media/ayush.385257ae5c23fedbc617.png",
+    "static/media/aditi.png": "/static/media/aditi.24abd032e5d546cbf673.png",
+    "static/media/varick.png": "/static/media/varick.9668a273f858a373174e.png",
+    "static/media/kaifeng.png": "/static/media/kaifeng.531421fcab252a16ba05.png",
+    "static/media/david.png": "/static/media/david.f4892f8f62e11fe3904c.png",
+    "static/media/ali.jpeg": "/static/media/ali.0bc4985d3c8c0a5a0047.jpeg",
+    "index.html": "/index.html",
+    "main.549e3205.css.map": "/static/css/main.549e3205.css.map",
+    "main.32681c8c.js.map": "/static/js/main.32681c8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.549e3205.css",
+    "static/js/main.32681c8c.js"
+  ]
+}
