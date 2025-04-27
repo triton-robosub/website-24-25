@@ -11,7 +11,7 @@ import Team from "./pages/team/team.jsx";
 import Auv from "./pages/auv.jsx";
 import Electrical from "./pages/electrical.jsx";
 import Mechanical from "./pages/mechanical.jsx";
-import Footer from "./components/footer.js";
+import Footer from "./components/footer.jsx";
 // import ContactStudent from "./components/contactStudent.jsx";
 
 function App() {
