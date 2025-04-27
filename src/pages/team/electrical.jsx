@@ -1,54 +1,28 @@
 import React from "react";
 import "../team.css";
+import laalith from "../../assets/headshots/laalith.png";
+import andrew from "../../assets/headshots/andrew.png";
+import varick from "../../assets/headshots/varick.png";
+
 const electricalTeamMembers = [
   {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
+    name: "Laalith Nalluri",
+    specifics: "Electrical Member",
+    linkedin: "https://www.linkedin.com/in/andrew-jung-477bbb290",
+    headshot: laalith,
   },
   {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
+    name: "Andrew Jung",
+    specifics: "Electrical Member",
+    linkedin: "https://www.linkedin.com/in/andrew-jung-477bbb290",
+    headshot: andrew,
   },
   {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
-  {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
-  {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
-  {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
-  {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
-  {
-    name: "Irene Joo",
-    major: "Major",
-    gradYear: "Grad Year",
-    specifics: "Team Specifics",
-  },
+    name: "Varick Reynaldo",
+    specifics: "Electrical Member",
+    linkedin: "https://www.linkedin.com/in/varick-reynaldo-932554276?trk=contact-info",
+    headshot: varick,
+  }
 ];
 
 function ElectricalTeam() {
@@ -65,15 +39,25 @@ function ElectricalTeam() {
       <div className="team-grid">
         {electricalTeamMembers.map((member, index) => (
           <div key={index} className="team-member">
-            <div className="profile-placeholder"></div>
-            <div className="text">
-              <h2>{member.name}</h2>
-              <p>
-                {member.major}, {member.gradYear}
-              </p>
-              <p className="role">{member.specifics}</p>
-            </div>
+          <img
+            src={member.headshot}
+            alt={`${member.name}'s headshot`}
+            className="headshot"
+          />
+          <div className="text">
+          <h2>{member.name}</h2>
+            <p className="role">{member.specifics}</p>
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkedin-button"
+            >
+              <i className="fab fa-linkedin" style={{ marginRight: "6px" }}></i>
+              LinkedIn
+            </a>
           </div>
+        </div>
         ))}
       </div>
     </div>

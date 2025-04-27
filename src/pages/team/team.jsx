@@ -11,8 +11,7 @@ function Team() {
       <div className="image">
         <h1>Meet the Team</h1>
         <p>
-          Lorem ipsum odor amet, consectetuer adipiscing elit. Dictum dignissim
-          quisque sit porta magna nullam facilisis ultrices.
+          From hardware to code to creativity — meet the people powering our 2024-2025 Robosub!
         </p>
       </div>
 
@@ -20,8 +19,7 @@ function Team() {
         <MechanicalTeam />
         <ElectricalTeam />
         <SoftwareTeam />
-        <MarketingTeam />
-        <Advisor />
+        {/* <MarketingTeam /> */}
       </div>
     </div>
   );
