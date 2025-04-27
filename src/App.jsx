@@ -12,6 +12,7 @@ import Auv from "./pages/auv.jsx";
 import Electrical from "./pages/electrical.jsx";
 import Mechanical from "./pages/mechanical.jsx";
 import Footer from "./components/footer.js";
+// import ContactStudent from "./components/contactStudent.jsx";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/software" element={<Software />} />
         <Route path="/mechanical" element={<Mechanical />} />
         <Route path="/overview" element={<Overview />} />
+        {/* <Route path="/contactStudent" element={<ContactStudent />} /> */}
       </Routes>
       <Footer />
     </Router>
