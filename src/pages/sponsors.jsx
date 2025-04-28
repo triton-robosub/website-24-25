@@ -1,20 +1,25 @@
 import React from "react";
-import "./auvpages.css";
-import "../components/footer.css";
+import "./sponsors.css";
 
-
-function App() {
+function Sponsors() {
     return (
         <div>
-            <div className="container">
-                <div className="top">
-                    <h1 className="oxanium-semibold"> Our Sponsors</h1>
-                    <p className="blinker-regular"></p>
+            <div className>
+                <div className="image">
+                    <h1> Current Sponsors</h1>
+                    <p>
+                    Triton Robosub thanks all of our current sponsors, who
+                    enable us to design create, and participate in the RoboSub
+                    competition.
+                    </p>
                 </div>
             </div>
-          
+
+            <div classname= "sponsors-list">
+                <SponsorsList />
+            </div>
         </div>
     );
 }
 
-export default App;
+export default Sponsors;

@@ -2,7 +2,6 @@ import React from "react";
 import "./auvpages.css";
 import "../components/footer.css";
 
-
 function Software() {
     return (
         <div>
