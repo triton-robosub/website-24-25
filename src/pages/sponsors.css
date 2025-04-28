@@ -1,22 +1,152 @@
 @import url("https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600&display=swap");
-.sponsor-card {
-    background-color: #d2f0ff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-    aspect-ratio: 1/1;
-    margin-bottom: 30px;
-  }
 
-  .team-member .text {
-    flex-grow: 1;
-    width: 100%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.sponsors-container {
+  width: 100%;
+  font-family: "Blinker", sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* HEADER (Top Section) */
+.header-image {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 106, 150, 0.5),
+      rgba(0, 41, 59, 0.5)
+    ),
+    url("../assets/teampics/team.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  color: white;
+  padding-top: 15vh;
+}
+
+.header-image h1 {
+  margin-top: 0;
+  color: white;
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  padding-top: 83px;
+}
+
+.header-image p {
+  font-family: "Blinker", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  max-width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* CURRENT SPONSORS SECTION */
+.current-sponsors {
+  margin-top: 60px;
+  padding: 0 48px;
+  text-align: left;
+}
+
+.current-sponsors h1 {
+  font-size: 48px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  color: #00293b;
+  margin-bottom: 16px;
+}
+
+.current-sponsors p {
+  font-family: "Blinker", sans-serif;
+  font-size: 20px;
+  color: #00293b;
+  margin-bottom: 40px;
+}
+
+/* SPONSOR SCROLL AREA */
+.sponsor-scroll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden; 
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 0 24px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.sponsor-scroll::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.sponsor-card {
+  flex: 0 0 auto;
+  width: 280px; 
+  max-width: 90%;
+  background-color: #d2f0ff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 1/1;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.sponsor-card:hover {
+  transform: scale(1.05);
+}
+
+.profile-placeholder {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: #9ecfe4;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.sponsor-card h2 {
+  font-family: "Oxanium", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #00293b;
+  margin-top: 10px;
+}
+
+/* SUPPORT US SECTION */
+.support-us {
+  margin-top: 60px;
+  padding: 0 48px;
+  text-align: left;
+}
+
+.support-us h1 {
+  font-size: 48px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  color: #00293b;
+  margin-bottom: 16px;
+}
+
+.support-us p {
+  font-family: "Blinker", sans-serif;
+  font-size: 20px;
+  color: #00293b;
+  margin-bottom: 20px;
+  max-width: 60vw;
+}
+
+/* DONATION LINK */
+.donation-link {
+  text-decoration: underline;
+  color: #006a96;
+  font-weight: 500;
+}
+
+.donation-link:hover {
+  color: #004866;
+}
