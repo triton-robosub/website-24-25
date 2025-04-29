@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 import "./navbar.css";
 
 export const Navbar = () => {
@@ -10,7 +11,7 @@ export const Navbar = () => {
                     <div className="logo-flex-container">
                         <Link to="/" className="logo-flex-box">
                             <img
-                                src={"../assets/logo.png"}
+                                src={logo}
                                 alt="logo"
                                 className="circle-logo"
                             />
@@ -20,33 +21,16 @@ export const Navbar = () => {
                         </Link>
                     </div>
                 </li>
-                <li className="dropdown">
-                    <Link to="/about" className="blinker-regular">
-                        about
+                <li>
+                    <Link to="/team" className="blinker-regular">
+                        meet the team
                     </Link>
-                    <ul className="dropdown-content">
-                        <li>
-                            <Link to="/alumni" className="blinker-regular">
-                                alumni
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/team" className="blinker-regular">
-                                meet the team
-                            </Link>
-                        </li>
-                    </ul>
                 </li>
                 <li className="dropdown">
                     <Link to="/auv" className="blinker-regular">
                         auv
                     </Link>
                     <ul className="dropdown-content">
-                        <li>
-                            <Link to="/overview" className="blinker-regular">
-                                overview
-                            </Link>
-                        </li>
                         <li>
                             <Link to="/electrical" className="blinker-regular">
                                 electrical
