@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600&display=swap");
+/* sponsors.css */
 
+/* general container */
 .sponsors-container {
   width: 100%;
   font-family: "Blinker", sans-serif;
   background-color: #f7f7f7;
 }
 
-/* HEADER (Top Section) */
+/* header section */
 .header-image {
   background-image: linear-gradient(
       to bottom,
@@ -26,26 +26,20 @@
 }
 
 .header-image h1 {
-  margin-top: 0;
-  color: white;
   font-family: "Oxanium", sans-serif;
-  font-weight: 700;
   font-size: 64px;
-  text-align: center;
-  padding-top: 83px;
+  font-weight: 700;
+  margin: 0;
 }
 
 .header-image p {
   font-family: "Blinker", sans-serif;
-  font-weight: 400;
   font-size: 20px;
-  color: white;
   max-width: 40%;
-  margin: 0 auto;
-  text-align: center;
+  margin: 20px auto 0 auto;
 }
 
-/* CURRENT SPONSORS SECTION */
+/* sponsors section */
 .current-sponsors {
   margin-top: 60px;
   padding: 0 48px;
@@ -53,11 +47,10 @@
 }
 
 .current-sponsors h1 {
-  font-size: 48px;
   font-family: "Oxanium", sans-serif;
+  font-size: 48px;
   font-weight: 700;
   color: #00293b;
-  margin-bottom: 16px;
 }
 
 .current-sponsors p {
@@ -67,48 +60,92 @@
   margin-bottom: 40px;
 }
 
-/* SPONSOR SCROLL AREA */
-.sponsor-scroll {
+/* scrolling wrapper */
+.sponsor-scroll-wrapper {
+  overflow-x: visible;
+  width: 100%;
+  position: relative;
+  min-height: 320px;
+}
+
+/* new slider system */
+.slider {
+  --speed: 20s;
+  width: 100%;
+  height: var(--height);
+  overflow: visible;
+}
+
+.slider .list {
   display: flex;
-  overflow-x: auto;
-  overflow-y: hidden; 
-  scroll-behavior: smooth;
-  gap: 20px;
-  padding: 0 24px;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+  overflow: visible;
 }
 
-
-.sponsor-scroll::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+.slider .list .item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun var(--speed) linear infinite;
+  transition: filter 0.5s;
+  animation-delay: calc((var(--speed) / var(--quantity)) * (var(--position) - 1) - var(--speed)) !important;
 }
 
+.item.paused {
+  animation-play-state: paused !important;
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
+
+/* sponsor card inside item */
 .sponsor-card {
   flex: 0 0 auto;
-  width: 280px; 
-  max-width: 90%;
+  width: 100%;
+  height: 100%;
   background-color: #d2f0ff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  aspect-ratio: 1/1;
   text-align: center;
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .sponsor-card:hover {
   transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
+/* profile placeholder for image */
 .profile-placeholder {
   width: 100%;
   aspect-ratio: 1/1;
   background-color: #9ecfe4;
   border-radius: 20px;
   margin-bottom: 16px;
+  overflow: hidden;
 }
 
+.profile-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* sponsor name */
 .sponsor-card h2 {
   font-family: "Oxanium", sans-serif;
   font-size: 24px;
@@ -117,7 +154,7 @@
   margin-top: 10px;
 }
 
-/* SUPPORT US SECTION */
+/* support us section */
 .support-us {
   margin-top: 60px;
   padding: 0 48px;
@@ -125,11 +162,10 @@
 }
 
 .support-us h1 {
-  font-size: 48px;
   font-family: "Oxanium", sans-serif;
+  font-size: 48px;
   font-weight: 700;
   color: #00293b;
-  margin-bottom: 16px;
 }
 
 .support-us p {
@@ -140,7 +176,7 @@
   max-width: 60vw;
 }
 
-/* DONATION LINK */
+/* donation link */
 .donation-link {
   text-decoration: underline;
   color: #006a96;
@@ -150,3 +186,19 @@
 .donation-link:hover {
   color: #004866;
 }
+
+
+
+
+
+
+.sponsor-card:hover {
+  box-shadow: 0 0 20px rgba(0, 106, 150, 0.7), 0 0 30px rgba(0, 106, 150, 0.5);
+}
+
+
+
+
+
+
+
