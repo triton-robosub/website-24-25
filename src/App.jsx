@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sponsors from "./pages/sponsors.jsx";
 import AboutUs from "./components/about.jsx";
 import { Navbar } from "./components/navbar.jsx";
-import Overview from "./pages/overview.jsx";
 import Software from "./pages/software.jsx";
 import Blog from "./pages/blog.jsx";
 import Gallery from "./components/gallery.jsx";
@@ -29,7 +28,6 @@ function App() {
         <Route path="/electrical" element={<Electrical />} />
         <Route path="/software" element={<Software />} />
         <Route path="/mechanical" element={<Mechanical />} />
-        <Route path="/overview" element={<Overview />} />
         {/* <Route path="/contactStudent" element={<ContactStudent />} /> */}
       </Routes>
       <Footer />
