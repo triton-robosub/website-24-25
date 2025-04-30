@@ -1,5 +1,5 @@
 import React from "react";
-import "./auvpages.css";
+import "./subteams.css";
 import "../components/footer.css";
 
 
