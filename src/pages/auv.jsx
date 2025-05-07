@@ -1,124 +1,96 @@
-import "../output.css";
-import "../input.css";
-import "./auv.css";
-// import picture from "../assets/logotransparent.png";
-import { Worker, Viewer } from "@react-pdf-viewer/core";
-import "@react-pdf-viewer/core/lib/styles/index.css";
-import "../components/components.css";
-import { Link } from "react-router-dom";
+// src/components/Auv.jsx
+import React, { useEffect } from 'react';
+import electricalIcon from '../assets/electrical_logo.png';
+import mechanicalIcon from '../assets/mechanical_logo.png';
+import softwareIcon   from '../assets/software_logo.png';
+import teamPhoto      from '../assets/image.png';
+import logo           from '../assets/logo.png';
+import paperPdf       from '../assets/fakeRobosubDoc.pdf';
+import '../pages/auv.css';
 
-function Auv() {
-    return (
-        <div className="main-background2">
-            {/* Hero section */}
-            <section>
-                <div className="hero-container">
-                    <div className="hero-desc-container">
-                        <h1 className="section-head oxanium-bold">AUV</h1>
-                        <p className="hero-description blinker-regular">
-                            Welcome to Triton Robosub! Our Autonomous Underwater
-                            Vehicle (AUV), “Nu”, is the culmination of teamwork,
-                            creativity, and innovation by undergraduate students
-                            at UC San Diego. Designed for the 2023 Robosub
-                            competition, Nu showcases our passion for underwater
-                            robotics and engineering excellence. With its sleek
-                            design and advanced capabilities, Nu is built to
-                            navigate underwater challenges with precision and
-                            reliability. It represents not just a technical
-                            achievement but also the dedication and
-                            collaboration of a team striving to push the
-                            boundaries of what student-led projects can
-                            accomplish.
-                        </p>
-                    </div>
-                </div>
-            </section>
+export default function Auv() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const target = entry.target;
+        if (entry.isIntersecting && !target.classList.contains('visible')) {
+          requestAnimationFrame(() => {
+            target.classList.add('visible');
+          });
+        }
+      });
+    }, { threshold: 0.1 });
 
-            {/* Overview section */}
-            <section>
-                <div className="overview-container">
-                    <div className="overview-desc-container">
-                        <h2 className="section-head">Overview</h2>
-                        <p className="overview-description">
-                            “Nu” is an advanced Autonomous Underwater Vehicle
-                            (AUV) developed by undergraduate students at UC San
-                            Diego for the 2023 Robosub competition. It features
-                            a custom-designed HDPE frame with six degrees of
-                            freedom, enabling precise maneuverability. The AUV
-                            integrates modular electrical systems, including a
-                            Jetson Xavier NX for mission planning and advanced
-                            sensors like Doppler Velocity Log (DVL) and
-                            exploreHD cameras for underwater navigation and
-                            imaging. With robust mechanical, electrical, and
-                            software systems, “Nu” represents a fully realized
-                            platform designed for efficient and reliable
-                            underwater exploration.
-                        </p>
-                    </div>
-                    <AUVImage />
-                </div>
-            </section>
-            {/* Cards section */}
-            <section>
-                <div className="card-container">
-                    <SoftwareTeamCard />
-                    <MechanicalTeamCard />
-                    <ElectricalTeamCard />
-                </div>
-            </section>
+    document.querySelectorAll('.slide-in').forEach(el => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
 
-            {/* Technical paper section */}
-            <section className="report-container">
-                <div className="pdf-description">
-                    <h2 className="section-head">Technical Paper</h2>
-                    <p>An insight into the technicalities of our submarine</p>
-                </div>
-                <TechnicalReport />
-            </section>
+  return (
+    <div className="auv-container">
+      {/* hero */}
+      <section
+        className="hero-container"
+        style={{
+          backgroundImage: `linear-gradient(var(--hero-gradient-start), var(--hero-gradient-end)), url(${teamPhoto})`
+        }}
+      >
+        <h1>AUV</h1>
+        <p className="hero-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </section>
+
+      {/* overview */}
+      <section className="overview-section">
+        <div className="overview-container">
+          <div className="overview-desc-container">
+            <h2>Overview</h2>
+            <p className="overview-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div className="image-wrapper slide-in">
+            <img src={logo} alt="Logo" className="styled-image" />
+          </div>
         </div>
-    );
-}
+      </section>
 
-function AUVImage() {
-    return (
-        <div>
-            <img src="./assets/logo.png" className="picture" alt="Logo" />
+      {/* cards */}
+      <section className="card-section">
+        <div className="card-container">
+          <a href="/website-24-25/electrical" className="buttonCard electrical">
+            <span className="label">Electrical</span>
+            <img src={electricalIcon} alt="Electrical icon" className="icon" />
+          </a>
+          <a href="/website-24-25/mechanical" className="buttonCard mechanical">
+            <span className="label">Mechanical</span>
+            <img src={mechanicalIcon} alt="Mechanical icon" className="icon" />
+          </a>
+          <a href="/website-24-25/software" className="buttonCard software">
+            <span className="label">Software</span>
+            <img src={softwareIcon} alt="Software icon" className="icon" />
+          </a>
         </div>
-    );
-}
+      </section>
 
-function TechnicalReport() {
-    return (
-        <div className="pdf-container">
-            <Worker workerUrl="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.worker.min.js">
-                <Viewer fileUrl="https://robosub-technical-report.s3.us-east-2.amazonaws.com/TDR_TritonRobosub_RS2023+2.pdf" />
-            </Worker>
+      {/* technical paper */}
+      <section className="report-section">
+        <div className="report-container">
+          <div className="pdf-container">
+            <iframe
+              src={`${paperPdf}#toolbar=1&navpanes=0&scrollbar=1`}
+              title="Technical Paper"
+              allowFullScreen
+            />
+          </div>
+          <div className="pdf-description slide-in">
+            <h2>Technical Paper</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
         </div>
-    );
+      </section>
+    </div>
+  );
 }
-
-function SoftwareTeamCard() {
-    return (
-        <Link to="/software">
-            <button className="buttonCard software">Software</button>
-        </Link>
-    );
-}
-
-function MechanicalTeamCard() {
-    return (
-        <Link to="/mechanical">
-            <button className="buttonCard mechanical">Mechanical</button>
-        </Link>
-    );
-}
-
-function ElectricalTeamCard() {
-    return (
-        <Link to="/electrical">
-            <button className="buttonCard electrical">Electrical</button>
-        </Link>
-    );
-}
-
-export default Auv;
