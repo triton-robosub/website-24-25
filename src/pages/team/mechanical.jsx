@@ -4,6 +4,8 @@ import kaifeng from "../../assets/headshots/kaifeng.png";
 import weifung from "../../assets/headshots/weifung.png";
 import morgan from "../../assets/headshots/morgan.png";
 import rosslyn from "../../assets/headshots/rosslyn.png";
+import danica from "../../assets/headshots/danica.png";
+import minh from "../../assets/headshots/minh.png";
 
 const mechanicalTeamMembers = [
   {
@@ -11,6 +13,18 @@ const mechanicalTeamMembers = [
     specifics: "President",
     linkedin: "https://www.linkedin.com/in/weifunggoh",
     headshot: weifung,
+  },
+  {
+    name: "Danica Royer",
+    specifics: "Sub Restoration Lead",
+    linkedin: "https://www.linkedin.com/in/danica-royer-1473a72aa/",
+    headshot: danica,
+  },
+  {
+    name: "Minh Le",
+    specifics: "Grabber Lead",
+    linkedin: "https://www.linkedin.com/in/minh-le-a36099363?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBFdP0njFTE6DYiEo3eTKyw%3D%3D ",
+    headshot: minh,
   },
   {
     name: "Morgan Rockwell",
