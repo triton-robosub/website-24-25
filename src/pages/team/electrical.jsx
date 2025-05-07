@@ -3,6 +3,8 @@ import "../team.css";
 import laalith from "../../assets/headshots/laalith.png";
 import andrew from "../../assets/headshots/andrew.png";
 import varick from "../../assets/headshots/varick.png";
+import max from "../../assets/headshots/max.png";
+import andres from "../../assets/headshots/andres.png";
 
 const electricalTeamMembers = [
   {
@@ -22,6 +24,18 @@ const electricalTeamMembers = [
     specifics: "Electrical Member",
     linkedin: "https://www.linkedin.com/in/varick-reynaldo-932554276?trk=contact-info",
     headshot: varick,
+  },
+  {
+    name: "Max Bayer",
+    specifics: "Electrical Member",
+    linkedin: "https://www.linkedin.com/in/william-bayer-a1524223a/",
+    headshot: max,
+  },
+  {
+    name: "Andres Soto",
+    specifics: "Electrical Member",
+    linkedin: "https://www.linkedin.com/in/andres-soto-34a479278?trk=contact-info/",
+    headshot: andres,
   }
 ];
 

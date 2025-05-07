@@ -8,8 +8,20 @@ import david from "../../assets/headshots/david.png";
 import edward from "../../assets/headshots/edward.png";
 import ayush from "../../assets/headshots/ayush.png";
 import aditi from "../../assets/headshots/aditi.png";
+import samuel from "../../assets/headshots/samuel.png";
+import vishrut from "../../assets/headshots/vishrut.png";
+import veeral from "../../assets/headshots/veeral.png";
+import alyssia from "../../assets/headshots/alyssia.png";
+import kate from "../../assets/headshots/kate.png";
+import nathan from "../../assets/headshots/nathan.png";
 
 const softwareTeamMembers = [
+  {
+    name: "Vishrut Guggilla",
+    specifics: "Co-President",
+    linkedin: "www.linkedin.com/in/vishrut-g",
+    headshot: vishrut,
+  },
   {
     name: "Darin Djapri",
     specifics: "Software Team Lead",
@@ -47,6 +59,12 @@ const softwareTeamMembers = [
     headshot: weston,
   },
   {
+    name: "Kate Wang",
+    specifics: "Software Member",
+    linkedin: "https://www.linkedin.com/in/kate-wang-174593244/",
+    headshot: kate,
+  },
+  {
     name: "David Hong",
     specifics: "Software Member",
     linkedin: "https://linkedin.com/in/djhong1",
@@ -57,6 +75,30 @@ const softwareTeamMembers = [
     specifics: "Software Member",
     linkedin: "https://www.linkedin.com/in/aditi-bansal-b40731299/",
     headshot: aditi,
+  },
+  {
+    name: "Samuel Lin",
+    specifics: "Software Member",
+    linkedin: "https://www.linkedin.com/in/ying-jia-lin/",
+    headshot: samuel,
+  },
+  {
+    name: "Alyssia Almanza",
+    specifics: "Software Member",
+    linkedin: "https://www.linkedin.com/in/alyssiama",
+    headshot: alyssia,
+  },
+  {
+    name: "Veeral Patel",
+    specifics: "Software Member",
+    linkedin: "https://www.linkedin.com/in/veeral-patel/",
+    headshot: veeral,
+  },
+  {
+    name: "Nathan Natsuta",
+    specifics: "Software Member",
+    linkedin: "https://www.linkedin.com/in/nathan-tatsuta-934a1227a/",
+    headshot: nathan,
   },
 ];
 
