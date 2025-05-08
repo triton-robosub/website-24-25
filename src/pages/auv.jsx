@@ -1,10 +1,10 @@
 import "../output.css";
 import "../input.css";
 import "./auv.css";
-// import picture from "../assets/logotransparent.png";
+import picture from "../assets/logotransparent.png"; // <<<< UNCOMMENT THIS LINE
 import { Worker, Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
-import "../components/components.css";
+import "../components/components.css"; // Make sure this path is correct if components.css exists
 import { Link } from "react-router-dom";
 
 function Auv() {
@@ -55,7 +55,7 @@ function Auv() {
                             underwater exploration.
                         </p>
                     </div>
-                    <AUVImage />
+                    <AUVImage /> {/* This component will now work */}
                 </div>
             </section>
             {/* Cards section */}
@@ -79,10 +79,11 @@ function Auv() {
     );
 }
 
+// This component now has 'picture' defined from the import
 function AUVImage() {
     return (
         <div>
-            <img src={picture} className="picture" alt="Logo" />
+            <img src={picture} className="picture" alt="Triton Robosub Logo" /> {/* Changed alt text to be more descriptive */}
         </div>
     );
 }

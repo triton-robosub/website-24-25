@@ -12,6 +12,7 @@ import Auv from "./pages/auv.jsx";
 import Electrical from "./pages/electrical.jsx";
 import Mechanical from "./pages/mechanical.jsx";
 import Footer from "./components/footer.js";
+import BlogTemplate from "./pages/blogtemplate.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<AboutUs />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogTemplate />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/team" element={<Team />} />

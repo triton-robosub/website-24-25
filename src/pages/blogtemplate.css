@@ -1,0 +1,270 @@
+/* General Imports & Animations */
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oxanium:wght@600&display=swap");
+
+:root {
+  --font-primary: "Oxanium", sans-serif;
+  --font-secondary: "Blinker", sans-serif;
+  --color-primary: #006a96; /* Main accent color from PDF */
+  --color-primary-dark: #004b6b;
+  --color-secondary-accent: #ffd31e; /* Yellow accent from PDF */
+  --color-text-light: white; /* #FFFFFF from PDF */
+  --color-text-dark: #002938; /* Darkest blue from PDF for text */
+  --color-text-medium: #444;
+  --color-text-soft: #666;
+  --color-background-light: #F6F7F9; /* Lightest grey/white from PDF */
+  --color-background-page: white;   /* For the main content box */
+  --color-heading-dark: #002938;   /* Dark blue from PDF for headings */
+  --gradient-header-start: rgba(0, 41, 56, 0.8); /* Darker blue, adjust opacity */
+  --gradient-header-end: rgba(0, 106, 150, 0.7); /* Lighter blue, adjust opacity */
+  --border-radius-main: 8px; /* Rounded corners for content box */
+  --box-shadow-medium: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.98); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Base Styles (applied if not using a global reset/normalize) */
+/*
+body {
+  margin: 0;
+  font-family: var(--font-secondary);
+  color: var(--color-text-dark);
+  background-color: var(--color-background-light);
+  line-height: 1.6;
+}
+*/
+
+/* Overall Page Container */
+.blog-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-background-light); /* Light gray background for the whole page */
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Header Section (Top hero image) */
+.blog-header {
+  width: 100%;
+  height: 350px; /* Adjust as needed */
+  position: relative;
+  /* Ensure your image path is correct and the image is suitable for a background */
+  background-image: linear-gradient(
+    var(--gradient-header-start),
+    var(--gradient-header-end)
+  ),
+  url("../assets/vehicle.png"); /* Default background from PDF. Replace with dynamic post.headerImage if available */
+  background-size: cover;
+  background-position: center;
+  color: var(--color-text-light);
+  display: flex; /* For centering overlay content */
+  align-items: center; /* For centering overlay content */
+  justify-content: center; /* For centering overlay content */
+  text-align: center;
+}
+
+.header-overlay {
+  padding: 20px;
+  max-width: 700px; /* Limit width of text */
+}
+
+.header-title {
+  font-family: var(--font-primary);
+  font-size: 2.8rem; /* Adjust based on "Our Blog" in target */
+  font-weight: 600; /* oxanium-semibold */
+  margin-bottom: 0.5rem;
+  animation: slideInLeft 0.7s ease-out;
+}
+
+.header-subtitle {
+  font-family: var(--font-secondary);
+  font-size: 1.1rem; /* Adjust based on subtitle in target */
+  font-weight: 400; /* blinker-regular */
+  animation: fadeIn 0.9s ease-out 0.2s;
+  opacity: 0.9;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Main Content Area (White box) */
+.blog-content {
+  max-width: 800px; /* Standard width for readability */
+  margin: -50px auto 40px; /* Negative margin for overlap, adjust as needed */
+  padding: 30px 40px; /* Ample padding */
+  background: var(--color-background-page);
+  border-radius: var(--border-radius-main);
+  box-shadow: var(--box-shadow-medium);
+  position: relative; /* For the overlap effect */
+  z-index: 10; /* To ensure it's above the header image if they overlap slightly */
+  animation: scaleIn 0.6s ease-out;
+}
+
+.go-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600; /* blinker-regular might be 400, adjust if needed */
+  font-family: var(--font-secondary);
+  transition: color 0.3s ease;
+}
+
+.go-back:hover {
+  color: var(--color-primary-dark);
+}
+
+.published-date {
+  color: var(--color-text-soft); /* Softer color for metadata */
+  font-family: var(--font-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.blog-title { /* This is the "Blog Title Goes Here" */
+  font-family: var(--font-primary);
+  font-size: 2.2rem; /* Large and impactful */
+  font-weight: 600; /* oxanium-semibold */
+  color: var(--color-heading-dark);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.blog-author {
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+  margin-bottom: 25px;
+}
+
+.blog-author span {
+  font-weight: 600; /* Bolder for author's name */
+  color: var(--color-text-dark);
+}
+
+.blog-intro {
+  font-family: var(--font-secondary);
+  font-size: 1.1rem; /* Slightly larger for emphasis */
+  line-height: 1.7;
+  color: var(--color-text-medium);
+  margin-bottom: 30px;
+  /* Optional: border-left: 3px solid var(--color-primary); padding-left: 15px; */
+}
+
+/* Featured Image within content area */
+.blog-image {
+  width: 100%;
+  margin: 25px 0;
+  border-radius: var(--border-radius-main);
+  overflow: hidden;
+  /* Mimic the light blue placeholder in your target screenshot */
+  background-color: #e0f2f7; /* Light blue placeholder color */
+  min-height: 300px; /* Ensure it has some height even if image fails to load */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 450px; /* Optional: constrain height */
+  object-fit: cover; /* Cover the area nicely */
+  display: block;
+}
+
+/* Main Blog Text Paragraphs */
+.blog-text {
+  font-family: var(--font-secondary);
+  color: var(--color-text-medium);
+  line-height: 1.8; /* Good for readability */
+  font-size: 1rem; /* Standard body text size */
+}
+
+.blog-text p {
+  margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+.blog-text p:first-letter { /* Optional drop cap, not explicitly in target design */
+  /* font-size: 1.5em; */
+  /* font-weight: 600; */
+  /* color: var(--color-primary); */
+  /* float: left; */
+  /* margin-right: 0.1em; */
+  /* line-height: 0.8; */
+}
+
+/* Text selection highlight */
+::selection {
+  background: var(--color-secondary-accent); /* Yellow accent for selection */
+  color: var(--color-heading-dark);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .blog-header {
+    height: 300px;
+  }
+  .header-title {
+    font-size: 2.2rem;
+  }
+  .header-subtitle {
+    font-size: 1rem;
+  }
+  .blog-content {
+    margin: -40px 20px 30px; /* Adjust margins for smaller screens */
+    padding: 25px;
+  }
+  .blog-title {
+    font-size: 1.8rem;
+  }
+  .blog-intro {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-header {
+    height: 250px;
+  }
+  .header-title {
+    font-size: 1.8rem;
+  }
+  .blog-content {
+    margin: -30px 15px 20px;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  .blog-title {
+    font-size: 1.5rem;
+  }
+  .blog-image {
+    min-height: 200px;
+  }
+}
+
+/* Add styles for the wavy blue footer element if it's part of this template's responsibility.
+   Otherwise, it should be part of your global footer or layout.
+   Example:
+.blog-page-wave-footer {
+    width: 100%;
+    height: 100px; // Adjust
+    background-image: url('../assets/wavy-blue-background.svg'); // Assuming you have such an asset
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+*/
