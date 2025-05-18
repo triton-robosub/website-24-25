@@ -1,59 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap");
+
 .oxanium-semibold {
   font-family: "Oxanium", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
-  font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oxanium:wght@600&display=swap');
 .blinker-regular {
   font-family: "Blinker", sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
 
-/* General Footer Styling */
-footer {
+/* footer container */
+.footer {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  background-color: #01293b; 
-  color: #01293b;
-  text-align: center;
+  background-color: #01293b;
+  color: white;
   padding: 20px 0;
-  border-top: 1px solid;
-  gap: 0;
-}
-
-/* Footer Content Box */
-.footer-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1em;
-  width: 100%;
-  max-width: 1200px;
+  border-top: 1px solid #ffffff33;
 }
 
 .footer-container {
-  justify-content: center;
-  flex-direction: row;
+  display: flex;
+  justify-content: space-between; /* push left/right apart */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1em;
 }
 
-/* Footer Social Links */
-.footer-social {
+/* left side: logo + text */
+.footer-left {
   display: flex;
-  justify-content: center;
-  margin-top: 0.5rem;
+  align-items: center;
+  gap: 0.75em;
+}
+
+/* right side: icons */
+.footer-right {
+  display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
+/* make each link a flex box so the SVG inside centers vertically */
 .footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25em;        /* gives a bit of touch area */
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
@@ -61,53 +59,12 @@ footer {
   color: #718096;
 }
 
-/* Footer Location Section */
-.footer-location {
-  display: flex;
-  flex-direction: column;
-  width: 10em;
-  gap: 0;
+.wh8 {
+  height: 20px;
+  width: auto;           
+  display: block;   
 }
 
-.loc p {
-  margin: 0;
-  padding: 0;
-  color: black;
-}
-
-.loc {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-/* Footer Navigation Links */
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-footer ul li {
-  display: inline;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: #007bff;
-  transition: color 0.3s ease;
-}
-
-footer ul li a:hover {
-  text-decoration: underline;
-  color: #0056b3;
-}
-
-/* Sticky Footer Layout */
 body {
   display: flex;
   flex-direction: column;
@@ -119,9 +76,8 @@ main {
   flex: 1;
 }
 
-/* Icon Styling */
-.wh8 {
-  width: 20px;
-  height: 20px;
-  color: white;
+.linkedin-img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
