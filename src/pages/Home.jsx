@@ -78,7 +78,7 @@ function Home() {
               robotics.
             </p>
           </div>
-          <Link to="/sponsors" className="yellow-button">Connect with us</Link>
+          <Link to="/contact" className="yellow-button">Connect with us</Link>
         </div>
       </section>
       
