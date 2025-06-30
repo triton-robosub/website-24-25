@@ -6,11 +6,11 @@ import googleLogo from "../assets/sponsors/google.png";
 
 const SponsorsPage = () => {
   const sponsors = [
-    { name: "Sponsor 1", img: "https://via.placeholder.com/300x150" },
-    { name: "Sponsor 2", img: "https://via.placeholder.com/300x150" },
-    { name: "Sponsor 3", img: "https://via.placeholder.com/300x150" },
-    { name: "Sponsor 4", img: "https://via.placeholder.com/300x150" },
-    { name: "Sponsor 5", img: "https://via.placeholder.com/300x150" },
+    { name: "TBA", img: "https://via.placeholder.com/300x150?text=TBA" },
+    { name: "TBA", img: "https://via.placeholder.com/300x150?text=TBA" },
+    { name: "TBA", img: "https://via.placeholder.com/300x150?text=TBA" },
+    { name: "TBA", img: "https://via.placeholder.com/300x150?text=TBA" },
+    { name: "TBA", img: "https://via.placeholder.com/300x150?text=TBA" },
   ];
 
   const repeatedSponsors = useMemo(() => [...sponsors, ...sponsors], [sponsors]);
@@ -52,8 +52,8 @@ const SponsorsPage = () => {
           <div
             className="slider"
             style={{
-              "--height": "320px",
-              "--width": "280px",
+              "--height": "260px",
+              "--width": "220px",
               "--quantity": repeatedSponsors.length,
             }}
           >
@@ -94,17 +94,16 @@ const SponsorsPage = () => {
           and use our knowledge to give back to the robotics community at large.
         </p>
         <p>
-          To donate to Triton Robosub, follow{" "}
-          <a
-            href="https://giveto.ucsd.edu/giving/home/add-gift"
-            className="donation-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            this link
-          </a>{" "}
-          to UC San Diego's donation page.
+          To donate to Triton Robosub, follow the link below to UC San Diego's donation page.
         </p>
+        <a
+          href="https://giveto.ucsd.edu/giving/home/add-gift"
+          className="donation-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Donate to Triton Robosub
+        </a>
       </section>
     </div>
   );

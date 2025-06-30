@@ -11,7 +11,7 @@ import Blog from "./pages/blog.jsx";
 import Gallery from "./components/gallery.jsx";
 import Contact from "./pages/contact.jsx";
 import Team from "./pages/team/team.jsx";
-import Auv from "./pages/auv.jsx";
+import NewAuv from "./pages/newAuv.jsx";
 import Electrical from "./pages/electrical.jsx";
 import Mechanical from "./pages/mechanical.jsx";
 import Footer from "./components/footer.jsx";
@@ -39,7 +39,7 @@ function App() {
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/team" element={<Team />} />
-        <Route path="/auv" element={<Auv />} />
+        <Route path="/auv" element={<NewAuv />} />
         <Route path="/electrical" element={<Electrical />} />
         <Route path="/software" element={<Software />} />
         <Route path="/mechanical" element={<Mechanical />} />

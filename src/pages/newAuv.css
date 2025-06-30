@@ -1,0 +1,525 @@
+/* New AUV Page Styles */
+.new-auv-page {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Container */
+.new-auv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.new-auv-hero {
+    background: linear-gradient(135deg, #00293b 0%, #01406b 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.new-auv-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../assets/vehicle.png') center/cover;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.new-auv-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.new-auv-hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.new-auv-hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.new-auv-hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.new-auv-stat {
+    text-align: center;
+}
+
+.new-auv-stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffd31e;
+    margin-bottom: 8px;
+}
+
+.new-auv-stat-label {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* About Section */
+.new-auv-about {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.new-auv-about h2 {
+    font-size: 2.5rem;
+    color: #00293b;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.new-auv-about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.new-auv-about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.new-auv-features {
+    margin-top: 40px;
+}
+
+.new-auv-feature {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-auv-feature h4 {
+    color: #00293b;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.new-auv-feature p {
+    color: #666;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.new-auv-about-image {
+    text-align: center;
+}
+
+.new-auv-about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Competition Section */
+.new-auv-competition {
+    padding: 100px 0;
+    background: white;
+}
+
+.new-auv-competition h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00293b;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+.new-auv-competition-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.new-auv-competition-card {
+    background: #f8f9fa;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-auv-competition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.new-auv-competition-card h3 {
+    color: #00293b;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.new-auv-competition-card p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.new-auv-competition-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.new-auv-competition-card li {
+    color: #555;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.new-auv-competition-card li:last-child {
+    border-bottom: none;
+}
+
+/* Teams Section */
+.new-auv-teams {
+    padding: 100px 0;
+    background: white;
+}
+
+.new-auv-teams h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00293b;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.new-auv-teams-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.new-auv-teams-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.new-auv-team-button {
+    background: #f8f9fa;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    padding: 35px 25px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.new-auv-team-button:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: #ffd31e;
+    background: white;
+}
+
+.new-auv-team-button:hover .new-auv-team-icon {
+    transform: scale(1.2);
+}
+
+.new-auv-team-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.new-auv-team-button h3 {
+    color: #00293b;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.new-auv-team-button p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.new-auv-team-button:hover h3 {
+    color: #00293b;
+}
+
+.new-auv-team-button:hover p {
+    color: #555;
+}
+
+/* Documentation Section */
+.new-auv-documentation {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.new-auv-documentation h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00293b;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+.new-auv-doc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.new-auv-doc-text h3 {
+    color: #00293b;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.new-auv-doc-text p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.new-auv-doc-highlights {
+    margin-top: 30px;
+}
+
+.new-auv-highlight {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #ffd31e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.new-auv-highlight strong {
+    color: #00293b;
+}
+
+.new-auv-pdf-container {
+    background: white;
+    border-radius: 12px;
+    padding: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.new-auv-pdf-header {
+    background: #00293b;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.new-auv-pdf-header h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.new-auv-pdf-download {
+    background: #ffd31e;
+    color: #00293b;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.new-auv-pdf-download:hover {
+    background: #ffcc00;
+}
+
+.new-auv-pdf-viewer {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+}
+
+.new-auv-pdf-embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.new-auv-pdf-fallback {
+    padding: 40px;
+    text-align: center;
+    background: #f8f9fa;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-auv-pdf-fallback p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.new-auv-pdf-fallback a {
+    background: #00293b;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.new-auv-pdf-fallback a:hover {
+    background: #01406b;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .new-auv-teams-grid {
+        gap: 25px;
+        max-width: 900px;
+    }
+    
+    .new-auv-team-button {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .new-auv-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .new-auv-hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .new-auv-hero-stats {
+        gap: 30px;
+        flex-direction: column;
+    }
+    
+    .new-auv-about-grid,
+    .new-auv-doc-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .new-auv-competition-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .new-auv-teams-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .new-auv-container {
+        padding: 0 15px;
+    }
+    
+    .new-auv-about,
+    .new-auv-competition,
+    .new-auv-teams,
+    .new-auv-documentation {
+        padding: 60px 0;
+    }
+    
+    .new-auv-hero {
+        padding: 80px 0 60px;
+    }
+    
+    .new-auv-pdf-container {
+        height: 400px;
+    }
+    
+    .new-auv-pdf-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .new-auv-pdf-header h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .new-auv-hero-title {
+        font-size: 2rem;
+    }
+    
+    .new-auv-stat-number {
+        font-size: 2rem;
+    }
+    
+    .new-auv-competition-card,
+    .new-auv-feature,
+    .new-auv-highlight,
+    .new-auv-team-button {
+        padding: 20px 15px;
+    }
+} 

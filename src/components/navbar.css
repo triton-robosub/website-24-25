@@ -39,6 +39,11 @@ nav ul li {
     position: relative;
 }
 
+/* Dropdown parent styling */
+.dropdown {
+    position: relative;
+}
+
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -63,35 +68,48 @@ img {
 .dropdown-content {
     display: block;
     position: absolute; /* Positioned relative to parent */
+    top: calc(100% - 2px); /* Position directly below with slight overlap */
+    left: 0;
     background-color: #ffd31e;
     min-width: 160px; /* Minimum width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    z-index: 1; /* Ensure it appears above other elements */
+    z-index: 1000; /* Ensure it appears above other elements */
     padding: 10px 0;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    border-radius: 4px;
 }
 
 .dropdown-content li {
     display: block;
+    width: 100%;
 }
 
 .dropdown-content li a {
-    padding: 10px 15px;
+    padding: 12px 20px;
     color: #333;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .dropdown-content li a:hover {
-    background-color: #ffd31e; /* Highlight on hover */
+    background-color: #ffcc00; /* Slightly darker highlight on hover */
+    color: #000;
 }
 
 /* Show Dropdown on Hover */
 .dropdown:hover .dropdown-content {
-    display: block;
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.1 ease;
+    transition: opacity 0.1s ease, visibility 0.1s ease;
+}
+
+/* Keep dropdown visible when hovering over dropdown content */
+.dropdown-content:hover {
+    visibility: visible;
+    opacity: 1;
 }
 
 .logo-flex-container {
