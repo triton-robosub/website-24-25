@@ -168,20 +168,33 @@ const NewAuv = () => {
                                     </a>
                                 </div>
                                 <div className="new-auv-pdf-viewer">
+                                    <div className="new-auv-pdf-mobile-notice">
+                                        <p>📱 On mobile? <a href={pdfFile} target="_blank" rel="noopener noreferrer">Open PDF in new tab</a> for better viewing</p>
+                                    </div>
                                     <object 
-                                        data={`${pdfFile}#toolbar=1&navpanes=0&scrollbar=1&zoom=page-fit&view=FitH`} 
+                                        data={`${pdfFile}#toolbar=1&navpanes=0&scrollbar=1&zoom=page-width&view=FitH&pagemode=none`} 
                                         type="application/pdf"
                                         className="new-auv-pdf-embed"
                                     >
                                         <div className="new-auv-pdf-fallback">
                                             <p>Unable to display PDF file.</p>
-                                            <a 
-                                                href={pdfFile} 
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                Click here to view PDF
-                                            </a>
+                                            <div className="new-auv-pdf-buttons">
+                                                <a 
+                                                    href={pdfFile} 
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="new-auv-pdf-button"
+                                                >
+                                                    Open in New Tab
+                                                </a>
+                                                <a 
+                                                    href={pdfFile} 
+                                                    download="UCSD_TritonRobosub_TechnicalDesignReport.pdf"
+                                                    className="new-auv-pdf-button"
+                                                >
+                                                    Download PDF
+                                                </a>
+                                            </div>
                                         </div>
                                     </object>
                                 </div>
