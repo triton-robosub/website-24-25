@@ -6,7 +6,7 @@ import googleLogo from "../assets/sponsors/google.png";
 
 const SponsorsPage = () => {
   const sponsors = [
-    { name: "Google", img: googleLogo },
+    { name: "Sponsor 1", img: "https://via.placeholder.com/300x150" },
     { name: "Sponsor 2", img: "https://via.placeholder.com/300x150" },
     { name: "Sponsor 3", img: "https://via.placeholder.com/300x150" },
     { name: "Sponsor 4", img: "https://via.placeholder.com/300x150" },
@@ -37,8 +37,7 @@ const SponsorsPage = () => {
       <div className="header-image">
         <h1>Our Sponsors</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Dictum dignissim quisque sit porta magna nullam facilisis ultrices.
+          We are grateful for the generous support of our sponsors who make our underwater robotics projects possible. Their contributions enable us to compete, innovate, and advance the field of autonomous underwater vehicles.
         </p>
       </div>
 
