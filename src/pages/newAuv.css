@@ -492,18 +492,37 @@
     }
     
     .new-auv-pdf-container {
-        height: 400px;
+        height: 500px;
+        margin: 20px 0;
     }
     
     .new-auv-pdf-header {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
         gap: 10px;
-        text-align: center;
-        padding: 15px;
     }
     
     .new-auv-pdf-header h4 {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        flex: 1;
+    }
+    
+    .new-auv-pdf-download {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    
+    .new-auv-pdf-viewer {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .new-auv-pdf-embed {
+        min-height: 100%;
+        width: 100%;
     }
 }
 
@@ -521,5 +540,30 @@
     .new-auv-highlight,
     .new-auv-team-button {
         padding: 20px 15px;
+    }
+    
+    .new-auv-pdf-container {
+        height: 450px;
+        margin: 15px 0;
+        border-radius: 8px;
+    }
+    
+    .new-auv-pdf-header {
+        padding: 10px 12px;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    
+    .new-auv-pdf-header h4 {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    
+    .new-auv-pdf-download {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+        width: 100%;
+        text-align: center;
     }
 } 

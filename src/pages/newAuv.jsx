@@ -169,7 +169,7 @@ const NewAuv = () => {
                                 </div>
                                 <div className="new-auv-pdf-viewer">
                                     <object 
-                                        data={`${pdfFile}#toolbar=1&navpanes=0&scrollbar=1&zoom=75`} 
+                                        data={`${pdfFile}#toolbar=1&navpanes=0&scrollbar=1&zoom=page-fit&view=FitH`} 
                                         type="application/pdf"
                                         className="new-auv-pdf-embed"
                                     >
