@@ -98,8 +98,7 @@ function Blog() {
             <div className="blog-hero">
                 <h1 className="oxanium-semibold">Our Blog</h1>
                 <p className="blinker-regular">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Dictum
-                    dignissim quisque sit porta magna nullam facilisis ultrices.
+                    Stay updated with the latest developments from Triton Robosub. Follow us as we design, build, and test for competition.
                 </p>
             </div>
             
