@@ -7,7 +7,7 @@ function Contact() {
       {/* Hero Section */}
       <section className="contact-hero">
         <div className="contact-hero-content">
-          <h1 className="contact-hero-title">Get in Touch</h1>
+          <h1 className="contact-hero-title">Contact Us</h1>
           <p className="contact-hero-subtitle">
             Join our team, partner with us, or learn more about our underwater robotics projects
           </p>

@@ -136,3 +136,78 @@ img {
 .team-name {
     color: white;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .dropdown-content {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        box-shadow: none;
+        background-color: #004d5c;
+        min-width: 100%;
+        padding: 0;
+    }
+
+    .dropdown-content li a {
+        background-color: #004d5c;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    .dropdown-content li a:hover {
+        background-color: #ffd31e;
+        color: black;
+    }
+
+    .logo-flex-box {
+        margin-bottom: 10px;
+    }
+
+    .circle-logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .team-name {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .circle-logo {
+        height: 35px;
+        width: 35px;
+    }
+
+    .team-name {
+        font-size: 0.8rem;
+    }
+
+    nav ul li a {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}

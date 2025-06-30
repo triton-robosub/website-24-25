@@ -312,6 +312,16 @@
   .support-us h1 {
     font-size: 2.2rem;
   }
+  
+  .sponsor-scroll-wrapper {
+    max-width: 100%;
+    min-height: 220px;
+  }
+  
+  .slider {
+    --height: 220px !important;
+    --width: 180px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -319,7 +329,45 @@
     font-size: 2rem;
   }
   
-
+  .header-image p {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+  
+  .current-sponsors,
+  .support-us {
+    margin: 20px 15px;
+    padding: 40px 20px;
+  }
+  
+  .current-sponsors h1,
+  .support-us h1 {
+    font-size: 1.8rem;
+  }
+  
+  .current-sponsors p,
+  .support-us p {
+    font-size: 1rem;
+  }
+  
+  .sponsor-scroll-wrapper {
+    max-width: 100%;
+    min-height: 180px;
+  }
+  
+  .slider {
+    --height: 180px !important;
+    --width: 160px !important;
+  }
+  
+  .sponsor-card h2 {
+    font-size: 18px;
+  }
+  
+  .donation-link {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
 }
 
 
